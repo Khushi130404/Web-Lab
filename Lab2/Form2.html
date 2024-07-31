@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./output.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: rgb(141, 115, 154);
+        /* background-color: rgb(20, 3, 30); */
+        background-image: url(image/bg2.jpg);
+        background-repeat: round;
+        width: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid rgb(162, 151, 168);
+        padding: 5px 60px;
+        opacity: 0.8;
+        background-color: rgb(32, 6, 48);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        font-size: 28px;
+        color: aliceblue;
+      }
+
+      table {
+        margin-bottom: 20px;
+      }
+
+      .check {
+        align-items: center;
+      }
+
+      td {
+        padding: 5px;
+      }
+
+      input,
+      select {
+        border: transparent;
+        border-radius: 3px;
+        color: rgb(20, 3, 30);
+        padding: 3px;
+        background-color: rgb(242, 225, 252);
+        opacity: 0.7;
+      }
+
+      select {
+        width: 100%;
+        height: 25px;
+      }
+
+      button {
+        padding: 8px 18px;
+        margin: 0px 25px 0px 20px;
+        background-color: rgb(238, 233, 240);
+        opacity: 0.9;
+        font-size: 17px;
+        font-weight: 800;
+        color: rgb(20, 3, 30);
+        border-radius: 5px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body class="tinUpOut">
+    <form>
+      <h2>Student&nbsp; Registration</h2>
+      <table>
+        <tr>
+          <td>First Name</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Middle Name</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>DOB</td>
+          <td>:</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>:</td>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <td>Contact</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" />Coding</td>
+          <td><input type="checkbox" />Singing</td>
+          <td><input style="margin-left: 20px" type="checkbox" />Reading</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="gender" />Female</td>
+          <td><input type="radio" name="gender" />Male</td>
+          <td>
+            <input style="margin-left: 20px" type="radio" name="gender" />Other
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <select>
+              <option>Nirma</option>
+              <option>MSU</option>
+              <option>DAIICT</option>
+              <option>PDPU</option>
+              <option>DDU</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td><button type="submit">Submit</button></td>
+          <td><button type="button">Cancel</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

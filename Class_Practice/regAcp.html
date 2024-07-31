@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      table {
+        margin-bottom: 20px;
+      }
+
+      td {
+        padding: 5px;
+      }
+
+      select {
+        width: 100%;
+      }
+
+      button {
+        padding: 7px 20px;
+        margin: 0px 0px 4px 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>ACPC Registration</h2>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>DOB</td>
+          <td>:</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>:</td>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="gender" />Female</td>
+          <td><input type="radio" name="gender" />Male</td>
+          <td><input type="radio" name="gender" />Other</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <select>
+              <option>Nirma</option>
+              <option>MSU</option>
+              <option>DAIICT</option>
+              <option>PDPU</option>
+              <option>DDU</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td><button type="submit">Submit</button></td>
+          <td><button type="button">Cancel</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

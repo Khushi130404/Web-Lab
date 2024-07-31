@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      header {
+        height: 200px;
+        color: aliceblue;
+        border: 2px solid black;
+        display: flex;
+        background-color: #0098db;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header h1 {
+        font-weight: 300;
+        text-align: center;
+      }
+
+      main {
+        display: flex;
+        flex: 1;
+      }
+
+      nav {
+        width: 20%;
+        border: 2px solid black;
+        padding-left: 20px;
+        color: white;
+        background-color: #0098db;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      section {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a target="content-frame" style="color: #333" href="Form2.html"
+              >Home</a
+            >
+          </li>
+          <li><a target="content-frame" href="MSU.html">About Me</a></li>
+          <li><a target="content-frame" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section id="home">
+        <iframe name="content-frame"></iframe>
+      </section>
+    </main>
+  </body>
+</html>
