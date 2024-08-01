@@ -16,7 +16,16 @@
       crossorigin="anonymous"
     ></script>
     <script>
-        
+      function check() {
+        var mob = document.forms["form1"]["mobile"].value;
+        var reg = /^[6789][0-9]{9}$/;
+        // const reg=/^[6789]\d{9}$/;
+        if (!reg.test(mob)) {
+          alert("Invalid mobile number...!");
+          return false;
+        }
+        return true;
+      }
     </script>
   </head>
   <body>
