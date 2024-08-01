@@ -15,8 +15,24 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function check() {
+        var pass = document.forms["form1"]["pass"].value;
+        var reg = /^(?=.*[!@#$%^&*?"A-Za-z0-9])[A-Za-z0-9!@#$%^&*]{8,}$/;
+        if (!reg.test(pass)) {
+          alert("Password not suitable");
+          return false;
+        }
+        return true;
+      }
+    </script>
   </head>
-  <body>
-    
+  <body class="container">
+    <form action="" class="form" name="form1">
+      <br /><br />
+      Name : <input type="text" name="name" /><br /><br />
+      Password : <input type="password" name="pass" /><br /><br>
+      <input type="button" value="Submit" onclick="check()" />
+    </form>
   </body>
 </html>
