@@ -12,10 +12,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
     <style>
-       body {
-        background-color: #b9a8bd;
+      body {
+        background-color: rgb(159, 137, 172);
       }
       .album {
         padding: 30px 0;
@@ -23,18 +22,18 @@
       .card-img-top {
         height: 250px;
         object-fit: cover;
-        transition: transform 0.3s ease;
+        transition: transform 0.4s ease;
       }
-
       .card-img-top:hover {
-        transform: scale(1.1); 
+        transform: scale(1.03);
       }
       .card {
-        background-color: rgb(24, 3, 34);
-        transition: box-shadow 0.3s ease;
+        background-color: rgb(12, 2, 16);
+        transition: transform 0.6s ease;
       }
       .card:hover {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+        box-shadow: 0 8px 16px white;
+        transform: scale(1.1);
       }
       .card-body {
         text-align: center;
@@ -44,27 +43,30 @@
         font-family: "Playfair Display", serif;
       }
       .card-text {
-        color: #b9a8bd;
+        color: rgb(159, 137, 172);
         font-family: serif;
       }
       .fancy-text {
         font-family: "Brush Script MT", cursive;
         font-size: 45px;
-        color: black;
+        color: rgb(12, 2, 16);
+      }
+      i {
+        transition: transform 0.5s ease;
+      }
+      i:hover {
+        color: rgb(131, 9, 25) !important;
+        transform: scale(1.5);
       }
     </style>
   </head>
-  <body style="background-color: rgb(241, 204, 254)">
+  <body style="background-color: rgb(159, 137, 172)">
     <div class="album py-5">
       <div class="container">
-        <h1 class="text-center mb-5 fancy-text">
-          Art and Craft Photo Album
-        </h1>
+        <h1 class="text-center mb-5 fancy-text">Art and Craft Photo Album</h1>
         <div class="row">
-          <div class="col-md-4 rounded-lg  px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"
-            >
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
               <img
                 src="image/art1.jpg"
                 class="card-img-top p-4 rounded-lg"
@@ -74,181 +76,7 @@
                 <i class="fas fa-heart ml-4" style="color: red"></i>
                 <small class="text-muted mr-4">9/10</small>
               </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
-                <h5 class="card-title text-white">Tech Girl</h5>
-                <p class="card-text">
-                  An aesthetic photo of a tech-savvy girl surrounded by purple
-                  hues, showcasing the blend of technology and style.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 rounded-lg  px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"
-            >
-              <img
-                src="image/art2.jpg"
-                class="card-img-top p-4 rounded-lg"
-                alt="Art and Craft"
-              />
-              <div class="d-flex justify-content-between align-items-center">
-                <i class="fas fa-heart ml-4" style="color: red"></i>
-                <small class="text-muted mr-4">9/10</small>
-              </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
-                <h5 class="card-title text-white">Tech Girl</h5>
-                <p class="card-text">
-                  An aesthetic photo of a tech-savvy girl surrounded by purple
-                  hues, showcasing the blend of technology and style.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 rounded-lg  px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"
-            >
-              <img
-                src="image/art3.jpg"
-                class="card-img-top p-4 rounded-lg"
-                alt="Art and Craft"
-              />
-              <div class="d-flex justify-content-between align-items-center">
-                <i class="fas fa-heart ml-4" style="color: red"></i>
-                <small class="text-muted mr-4">9/10</small>
-              </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
-                <h5 class="card-title text-white">Tech Girl</h5>
-                <p class="card-text">
-                  An aesthetic photo of a tech-savvy girl surrounded by purple
-                  hues, showcasing the blend of technology and style.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-4 rounded-lg  px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"
-            >
-              <img
-                src="image/art4.jpg"
-                class="card-img-top p-4 rounded-lg"
-                alt="Art and Craft"
-              />
-              <div class="d-flex justify-content-between align-items-center">
-                <i class="fas fa-heart ml-4" style="color: red"></i>
-                <small class="text-muted mr-4">9/10</small>
-              </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
-                <h5 class="card-title text-white">Tech Girl</h5>
-                <p class="card-text">
-                  An aesthetic photo of a tech-savvy girl surrounded by purple
-                  hues, showcasing the blend of technology and style.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 rounded-lg  px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"
-            >
-              <img
-                src="image/art5.jpg"
-                class="card-img-top p-4 rounded-lg"
-                alt="Art and Craft"
-              />
-              <div class="d-flex justify-content-between align-items-center">
-                <i class="fas fa-heart ml-4" style="color: red"></i>
-                <small class="text-muted mr-4">9/10</small>
-              </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
-                <h5 class="card-title text-white">Tech Girl</h5>
-                <p class="card-text">
-                  An aesthetic photo of a tech-savvy girl surrounded by purple
-                  hues, showcasing the blend of technology and style.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 rounded-lg  px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"              
-            >
-              <img
-                src="image/art6.jpg"
-                class="card-img-top p-4 rounded-lg"
-                alt="Art and Craft"
-              />
-              <div class="d-flex justify-content-between align-items-center">
-                <i class="fas fa-heart ml-4" style="color: red"></i>
-                <small class="text-muted mr-4">9/10</small>
-              </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
-                <h5 class="card-title text-white">Tech Girl</h5>
-                <p class="card-text">
-                  An aesthetic photo of a tech-savvy girl surrounded by purple
-                  hues, showcasing the blend of technology and style.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-4 rounded-lg  px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"
-            >
-              <img
-                src="image/art7.jpg"
-                class="card-img-top p-4 rounded-lg"
-                alt="Art and Craft"
-              />
-              <div class="d-flex justify-content-between align-items-center">
-                <i class="fas fa-heart ml-4" style="color: red"></i>
-                <small class="text-muted mr-4">9/10</small>
-              </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
-                <h5 class="card-title text-white">Tech Girl</h5>
-                <p class="card-text">
-                  An aesthetic photo of a tech-savvy girl surrounded by purple
-                  hues, showcasing the blend of technology and style.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 rounded-lg  px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"
-            >
-              <img
-                src="image/art8.jpg"
-                class="card-img-top p-4 rounded-lg"
-                alt="Art and Craft"
-              />
-              <div class="d-flex justify-content-between align-items-center">
-                <i class="fas fa-heart ml-4" style="color: red"></i>
-                <small class="text-muted mr-4">9/10</small>
-              </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
+              <div class="card-body pt-0 pb-4 mb-1">
                 <h5 class="card-title text-white">Tech Girl</h5>
                 <p class="card-text">
                   An aesthetic photo of a tech-savvy girl surrounded by purple
@@ -258,9 +86,154 @@
             </div>
           </div>
           <div class="col-md-4 rounded-lg px-4">
-            <div
-              class="card mb-0 shadow-sm rounded-lg"
-            >
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art2.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Nature</h5>
+                <p class="card-text">
+                  A tranquil nature scene bathed in serene purple tones. The
+                  image captures the peaceful essence of natural beauty.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art3.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Heart Lights</h5>
+                <p class="card-text">
+                  A building adorned with lights forming a heart shape, glowing
+                  in a mesmerizing purple hue. The image radiates love.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art4.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Notes & Laptop</h5>
+                <p class="card-text">
+                  A stylish setup featuring notes and a laptop, all set in a
+                  soothing purple ambiance. Perfect for creative and tech
+                  enthusiasts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art5.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Foggy Train</h5>
+                <p class="card-text">
+                  A train shrouded in thick fog, making its way through a
+                  mysterious purple landscape. The scene evokes a sense of
+                  intrigue.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art6.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Chess</h5>
+                <p class="card-text">
+                  A captivating chessboard set against a dramatic purple
+                  backdrop. The pieces seem to come alive in this enchanting
+                  scene.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art7.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Cats & Moon</h5>
+                <p class="card-text">
+                  Two curious cats gazing at the moon, illuminated by a dreamy
+                  purple light. The image captures a magical moment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art8.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Heart Hands</h5>
+                <p class="card-text">
+                  A couple’s hands forming a heart shape, illuminated by a soft
+                  purple glow. The image symbolizes love and connection.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
               <img
                 src="image/art9.jpg"
                 class="card-img-top p-4 rounded-lg"
@@ -270,22 +243,84 @@
                 <i class="fas fa-heart ml-4" style="color: red"></i>
                 <small class="text-muted mr-4">9/10</small>
               </div>
-              <div
-                class="card-body pt-0 pb-4 mb-1"
-              >
-                <h5 class="card-title text-white">Tech Girl</h5>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Rose Fire</h5>
                 <p class="card-text">
-                  An aesthetic photo of a tech-savvy girl surrounded by purple
-                  hues, showcasing the blend of technology and style.
+                  A dramatic image of a rose being set ablaze against a deep
+                  purple backdrop. The intense contrast captures a powerful
+                  moment.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art10.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Saturn</h5>
+                <p class="card-text">
+                  A mesmerizing view of Saturn surrounded by a purple cosmic
+                  haze. The image captures the mystery of our solar system.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art11.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Heart Eye</h5>
+                <p class="card-text">
+                  An eye with a heart-shaped pupil, set against a soft purple
+                  backdrop. The image symbolizes love and vision in a unique
+                  way.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 rounded-lg px-4">
+            <div class="card mb-0 shadow-sm rounded-lg">
+              <img
+                src="image/art12.jpg"
+                class="card-img-top p-4 rounded-lg"
+                alt="Art and Craft"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fas fa-heart ml-4" style="color: red"></i>
+                <small class="text-muted mr-4">9/10</small>
+              </div>
+              <div class="card-body pt-0 pb-4 mb-1">
+                <h5 class="card-title text-white">Butterfly Kisses</h5>
+                <p class="card-text">
+                  An x-ray of a couple’s skulls with butterflies inside, trying
+                  to kiss. The surreal image blends love with the beauty.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
