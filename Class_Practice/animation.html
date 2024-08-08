@@ -20,10 +20,12 @@
     function animation() {
       var x = document.getElementById("animate");
       var id = setInterval(frame, 5);
-      var top = 0;
-      var left = 400;
+      var top = x.style.top;
+      top = top.slice(0, top.length - 2) - "0";
+      var left = x.style.left;
+      left = left.slice(0, left.length - 2) - "0";
       function frame() {
-        if (top == 400) {
+        if (left == 0) {
           clearInterval(id);
         } else {
           top++;
@@ -47,6 +49,8 @@
         id="animate"
         style="
           width: 100px;
+          top: 0px;
+          left: 400px;
           height: 100px;
           background-color: rgb(138, 104, 168);
           position: absolute;
