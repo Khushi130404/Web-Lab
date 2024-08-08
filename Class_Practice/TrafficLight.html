@@ -15,23 +15,18 @@
     />
     <script>
       window.onload = light;
-      const r = document.getElementById("red");
-      const y = document.getElementById("yellow");
-      const g = document.getElementById("green");
+
       function setRed() {
-        $("#red").css("background-color", "red");
-        $("#yellow").css("background-color", "aliceblue");
-        $("#green").css("background-color", "aliceblue");
+        $("#green").fadeTo(1000, 0);
+        $("#red").fadeTo(2000, 1);
       }
       function setYellow() {
-        $("#red").css("background-color", "aliceblue");
-        $("#yellow").css("background-color", "yellow");
-        $("#green").css("background-color", "aliceblue");
+        $("#red").fadeTo(1000, 0);
+        $("#yellow").fadeTo(2000, 1);
       }
       function setGreen() {
-        $("#red").css("background-color", "aliceblue");
-        $("#yellow").css("background-color", "aliceblue");
-        $("#green").css("background-color", "green");
+        $("#yellow").fadeTo(1000, 0);
+        $("#green").fadeTo(2000, 1);
       }
       function light() {
         $(document).ready(function () {
@@ -40,7 +35,7 @@
             setYellow();
             setTimeout(function () {
               setGreen();
-              setTimeout(setRed, 4000);
+              setTimeout(light, 4000);
             }, 6000);
           }, 6000);
         });
@@ -64,8 +59,23 @@
         align-items: center;
         align-content: center;
       }
+      #red,
+      #yellow,
+      #green {
+        opacity: 0;
+        transition: opacity 1s;
+      }
+      #red {
+        background-color: red;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+      #green {
+        background-color: green;
+      }
+
       .circle {
-        background-color: aliceblue;
         margin: 20px;
         width: 150px;
         height: 150px;
