@@ -16,6 +16,7 @@
   <script>
     function type(bt) {
       var ans = document.getElementById("ans");
+      if (ans.innerHTML == "0") ans.innerHTML = "";
       ans.innerHTML += bt.innerHTML;
     }
     function clearInput() {
@@ -25,27 +26,9 @@
 
     function giveAns() {
       var ans = document.getElementById("ans");
-      ans.innerHTML = calculate(
-        ans.innerHTML.charAt(0) - "0",
-        ans.innerHTML.charAt(2) - "0",
-        ans.innerHTML.charAt(1)
-      );
+      ans.innerHTML = eval(ans.innerHTML);
     }
 
-    function calculate(a, b, c) {
-      switch (c) {
-        case "+":
-          return a + b;
-        case "-":
-          return a - b;
-        case "*":
-          return a * b;
-        case "/":
-          return a / b;
-        case "%":
-          return a % b;
-      }
-    }
     function backInput() {
       var ans = document.getElementById("ans");
       ans.innerHTML = ans.innerHTML.slice(0, ans.innerHTML.length - 1);
