@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Application Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-section {
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        .form-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .form-subheader {
+            background-color: #ccc;
+            padding: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <div class="form-header">
+        <h3>EMPLOYMENT APPLICATION FORM</h3>
+        <p>PLEASE PRINT ALL INFORMATION REQUESTED EXCEPT SIGNATURE</p>
+        <p>APPLICANTS MAY BE TESTED FOR ILLEGAL DRUGS</p>
+    </div>
+    
+    <div class="form-section">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Last">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="First">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Middle">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Maiden">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Present Address:</label>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Number">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Street">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="State">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Zip">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="how-long">How Long?</label>
+            <input type="text" class="form-control" id="how-long">
+        </div>
+
+        <div class="form-group">
+            <label for="social-security">Social Security No.:</label>
+            <input type="text" class="form-control" id="social-security">
+        </div>
+
+        <div class="form-group">
+            <label for="telephone">Telephone:</label>
+            <input type="text" class="form-control" id="telephone">
+        </div>
+
+        <div class="form-group">
+            <label for="age">If under 18, please list age:</label>
+            <input type="text" class="form-control" id="age">
+        </div>
+
+        <div class="form-group">
+            <label for="position">Position Applied For:</label>
+            <input type="text" class="form-control" id="position">
+        </div>
+
+        <div class="form-group">
+            <label for="salary">Salary Desired:</label>
+            <input type="text" class="form-control" id="salary">
+        </div>
+
+        <div class="form-group">
+            <label>Days/Hours Available to Work:</label>
+            <div class="row">
+                <div class="col-md-2">
+                    <input type="checkbox" id="no-pref"> <label for="no-pref">No Pref</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="checkbox" id="mon"> <label for="mon">Mon</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="checkbox" id="tue"> <label for="tue">Tue</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="checkbox" id="wed"> <label for="wed">Wed</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="checkbox" id="thur"> <label for="thur">Thur</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="checkbox" id="fri"> <label for="fri">Fri</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="checkbox" id="sat"> <label for="sat">Sat</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="checkbox" id="sun"> <label for="sun">Sun</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="hours">How many hours can you work weekly?</label>
+            <input type="text" class="form-control" id="hours">
+        </div>
+
+        <div class="form-group">
+            <label for="nights">Can you work nights?</label>
+            <input type="text" class="form-control" id="nights">
+        </div>
+
+        <div class="form-group">
+            <label>Employment Desired:</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="radio" name="employment" id="full-time" value="full-time"> <label for="full-time">Full-Time Only</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" name="employment" id="part-time" value="part-time"> <label for="part-time">Part-Time Only</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" name="employment" id="full-or-part-time" value="full-or-part-time"> <label for="full-or-part-time">Full- or Part-Time</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="available">When available for work?</label>
+            <input type="text" class="form-control" id="available">
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="form-subheader">
+            <p>EDUCATION & OTHER INFORMATION</p>
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Type of School</th>
+                    <th>Name of School</th>
+                    <th>Location (Complete mailing address)</th>
+                    <th>No. of Years Completed</th>
+                    <th>Major & Degree</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>High School</td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>College</td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Bus. or Trade School</td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Professional School</td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper
