@@ -29,17 +29,19 @@
     </style>
 </head>
 <body>
-
-<div class="container mt-4">
-    <div class="form-header">
-        <h3>EMPLOYMENT APPLICATION FORM</h3>
-        <p>PLEASE PRINT ALL INFORMATION REQUESTED EXCEPT SIGNATURE</p>
-        <p>APPLICANTS MAY BE TESTED FOR ILLEGAL DRUGS</p>
+    <br>
+    <h3 class="text-center">EMPLOYMENT APPLICATION FORM</h3>
+    <div class="form">
+    <div class="container mt-4 px-0 border border-dark">
+    <div class="form-header pt-4">
+        <p class="fs-1">PLEASE PRINT ALL INFORMATION REQUESTED EXCEPT SIGNATURE</p>
     </div>
-    
-    <div class="form-section">
-        <div class="form-group">
-            <div class="row">
+    <div class="text-center pt-3 border border-dark">
+        <p class="fs-1">APPLICANTS MAY BE TESTED FOR ILLEGAL DRUGS</p>
+    </div>
+    <div class="form-section m-0 p-0">
+        <div class="form-group m-0">
+            <div class="row border border-dark m-0 p-3" style="display: flex; align-items: center; align-content: center; justify-content: center;">
                 <div class="col-md-8"><label for="">Please Complete Pages 1-5</label></div> 
                 <div class="col-md-1"><label for="" class="text-right ml-3">Date :</label></div>          
                 <div class="col-md-3">
@@ -47,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group border border-dark m-0 p-3">
             <label for="name">Name:</label>
             <div class="row">
                 <div class="col-md-3">
@@ -64,8 +66,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="form-group">
+        <div class="form-group border border-dark m-0 p-3">
             <label for="address">Present Address:</label>
             <div class="row">
                 <div class="col-md-3">
@@ -86,14 +87,17 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="how-long">How Long?</label>
-            <input type="text" class="form-control" id="how-long">
+        <div class="form-group row m-0 p-0">
+            <div class="col-md-7 border border-dark p-3"><label for="how-long">How Long?</label>
+                <input type="text" class="form-control" id="how-long"></div>
+            <div class="col-md-5 border border-dark p-3">
+                <label for="social-security">Social Security No.:</label>
+                <input type="text" class="form-control" id="social-security">
+            </div>
         </div>
 
         <div class="form-group">
-            <label for="social-security">Social Security No.:</label>
-            <input type="text" class="form-control" id="social-security">
+            
         </div>
 
         <div class="form-group">
@@ -225,6 +229,7 @@
         </table>
     </div>
 </div>
-
+    </div>
+    </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper
