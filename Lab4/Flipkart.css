@@ -22,7 +22,7 @@ body {
 
 .nav-link {
   color: black !important;
-  margin-right: 10px;
+  margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,5 +54,9 @@ body {
   display: none;
 }
 
-.arrow.dropdown-menu {
+.arrow.dropdown-menu-end {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100px);
+  margin-top: 0.5rem;
 }
