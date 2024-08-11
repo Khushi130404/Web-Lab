@@ -37,6 +37,12 @@ body {
   align-content: center;
 }
 
+.dropdown-toggle:hover {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
 .dropdown-menu a {
   display: flex;
   align-items: center;
