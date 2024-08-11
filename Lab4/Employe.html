@@ -11,7 +11,6 @@
     <style>
       .form-section {
         margin-bottom: 20px;
-        border: 1px solid #000;
         padding: 10px;
       }
       .form-header {
@@ -178,17 +177,21 @@
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="hours">How many hours can you work weekly?</label>
-            <input type="text" class="form-control" id="hours" />
+          <div class="row m-0 p-0">
+            <div class="col-md-6 border border-dark p-3">
+              <div class="form-group">
+                <label for="hours">How many hours can you work weekly?</label>
+                <input type="text" class="form-control" id="hours" />
+              </div>
+            </div>
+            <div class="col-md-6 border border-dark p-3">
+              <div class="form-group">
+                <label for="nights">Can you work nights?</label>
+                <input type="text" class="form-control" id="nights" />
+              </div>
+            </div>
           </div>
-
-          <div class="form-group">
-            <label for="nights">Can you work nights?</label>
-            <input type="text" class="form-control" id="nights" />
-          </div>
-
-          <div class="form-group">
+          <div class="form-group border border-dark p-3 m-0">
             <label>Employment Desired:</label>
             <div class="row">
               <div class="col-md-4">
@@ -221,51 +224,76 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group border border-dark p-3 m-0">
             <label for="available">When available for work?</label>
             <input type="text" class="form-control" id="available" />
           </div>
         </div>
 
-        <div class="form-section">
-          <div class="form-subheader">
+        <div class="form-section m-0 p-0">
+          <div class="form-subheader border border-dark pt-4">
             <p>EDUCATION & OTHER INFORMATION</p>
           </div>
 
-          <table class="table table-bordered">
+          <table
+            class="table table-bordered m-0"
+            style="border: 1.4px solid black"
+          >
             <thead>
               <tr>
-                <th>Type of School</th>
-                <th>Name of School</th>
-                <th>Location (Complete mailing address)</th>
-                <th>No. of Years Completed</th>
-                <th>Major & Degree</th>
+                <th class="border border-dark">Type of School</th>
+                <th class="border border-dark">Name of School</th>
+                <th class="border border-dark">
+                  Location (Complete mailing address)
+                </th>
+                <th class="border border-dark">No. of Years Completed</th>
+                <th class="border border-dark">Major & Degree</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>High School</td>
+                <td class="p-1 pl-3" style="background-color: #ccc" colspan="5">
+                  High School
+                </td>
+              </tr>
+              <tr>
+                <td></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
               </tr>
               <tr>
-                <td>College</td>
+                <td class="p-1 pl-3" style="background-color: #ccc" colspan="5">
+                  College
+                </td>
+              </tr>
+              <tr>
+                <td></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
               </tr>
               <tr>
-                <td>Bus. or Trade School</td>
+                <td class="p-1 pl-3" style="background-color: #ccc" colspan="5">
+                  Bus. or Trade School
+                </td>
+              </tr>
+              <tr>
+                <td></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
               </tr>
               <tr>
-                <td>Professional School</td>
+                <td class="p-1 pl-3" style="background-color: #ccc" colspan="5">
+                  Professional School
+                </td>
+              </tr>
+              <tr>
+                <td></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
                 <td><input type="text" class="form-control" /></td>
@@ -276,5 +304,6 @@
         </div>
       </div>
     </div>
+    <br />
   </body>
 </html>
