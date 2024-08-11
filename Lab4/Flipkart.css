@@ -36,3 +36,16 @@ body {
   align-items: center;
   align-content: center;
 }
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.dropdown-menu img {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
