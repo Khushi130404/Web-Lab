@@ -1,0 +1,18 @@
+body {
+  background-color: #ccc;
+}
+
+.navbar-custom {
+  background-color: white;
+}
+
+.navbar-brand img {
+  width: 100px;
+}
+.form-control-custom {
+  width: 500px;
+}
+
+.nav-link {
+  color: black !important;
+}
