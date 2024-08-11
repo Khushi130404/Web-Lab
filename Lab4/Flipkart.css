@@ -50,13 +50,12 @@ body {
   height: 18px;
 }
 
-.arrow a::after {
+.nav-link.dropdown-toggle::after {
   display: none;
 }
 
-.arrow.dropdown-menu-end {
+.dropdown-menu.custom-dropdown-menu {
   position: absolute;
   left: 0;
-  transform: translateX(-100px);
-  margin-top: 0.5rem;
+  transform: translateX(-80%);
 }
