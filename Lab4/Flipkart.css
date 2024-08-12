@@ -67,7 +67,9 @@ body {
 }
 
 .section1 img {
-  width: 90px;
+  width: 64px;
+  height: 64px;
+  align-self: center;
 }
 
 .section1.col {
@@ -76,4 +78,20 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  align-self: center;
+}
+
+.section1.col div {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+
+.section1.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
