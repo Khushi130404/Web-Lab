@@ -1,5 +1,5 @@
 body {
-  background-color: #ccc;
+  background-color: #f0f0f0;
 }
 
 .navbar-custom {
@@ -70,23 +70,35 @@ body {
   width: 64px;
   height: 64px;
   align-self: center;
+  align-content: center;
+}
+
+.section1 {
+  background-color: white;
+  margin: 10px 20px;
+  padding: 15px 5px;
 }
 
 .section1 .container {
-  padding: 10px 40px;
   width: 100%;
-  background-color: white;
-  margin-top: 10px;
+}
+
+.section1 .row {
+  margin: 0px -40px;
 }
 
 .section1 .col {
   display: grid;
-  justify-content: space-around;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
 
 .section1 .col div {
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 8px;
 }
