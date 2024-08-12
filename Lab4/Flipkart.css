@@ -72,26 +72,20 @@ body {
   align-self: center;
 }
 
-.section1.col {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
+.section1 .container {
+  padding: 10px 20px;
+  background-color: white;
+  margin-top: 10px;
 }
 
-.section1.col div {
-  align-content: center;
-  align-items: center;
+.section1 .col {
+  display: grid;
   justify-content: center;
-  text-align: center;
-  align-self: center;
+  align-items: center;
+  align-content: center;
 }
 
-.section1.row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+.section1 .col div {
+  margin-left: 4px;
+  margin-right: 4px;
 }
