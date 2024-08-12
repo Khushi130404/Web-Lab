@@ -73,19 +73,20 @@ body {
 }
 
 .section1 .container {
-  padding: 10px 20px;
+  padding: 10px 40px;
+  width: 100%;
   background-color: white;
   margin-top: 10px;
 }
 
 .section1 .col {
   display: grid;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
 }
 
 .section1 .col div {
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
