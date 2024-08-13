@@ -103,7 +103,36 @@ body {
   margin-top: 8px;
 }
 
-.section3 img {
+.section3 .con {
+  padding: 0 10px;
   width: 100%;
+}
+
+.section3 .row {
+  width: 100%;
+}
+
+.section3 .row2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.section3 .row2 div {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.section3 img {
+  width: 70%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
 }
