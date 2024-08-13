@@ -136,3 +136,8 @@ body {
   margin-right: auto;
   height: auto;
 }
+
+.section3 p {
+  margin: 0;
+  font-size: 14px;
+}
