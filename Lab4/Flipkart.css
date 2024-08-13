@@ -139,6 +139,7 @@ body {
 
 .section3 img {
   width: 90%;
+  height: 165px !important;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
