@@ -165,16 +165,25 @@ body {
   width: 100%;
 }
 
+.section5 {
+  background-color: white;
+}
+
+.section5 .row {
+  margin: 0 -60px;
+}
+
 .section5 .row div {
   display: grid;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
+  border: 1px solid #ccc;
 }
 
 .section5 img {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
