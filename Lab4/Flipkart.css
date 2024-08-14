@@ -167,10 +167,11 @@ body {
 
 .section5 {
   background-color: white;
+  margin: 0 20px;
 }
 
 .section5 .row {
-  margin: 0 -60px;
+  margin: 0 -40px;
 }
 
 .section5 .row div {
@@ -179,7 +180,10 @@ body {
   align-items: center;
   align-content: center;
   text-align: center;
+  padding-top: 12px;
+  padding-bottom: 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .section5 img {
