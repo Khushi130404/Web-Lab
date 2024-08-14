@@ -152,6 +152,10 @@ body {
   font-size: 14px;
 }
 
+.section4 .row {
+  margin: 0 -60px;
+}
+
 .section4 .row div {
   margin: 0;
   padding: 0 5px;
