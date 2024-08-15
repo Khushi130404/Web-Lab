@@ -209,3 +209,25 @@ body {
   margin-top: 10px;
   text-align: center;
 }
+
+.section6 {
+  background-color: white;
+  margin: 0 20px;
+}
+
+.section6 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 -60px;
+}
+
+.section6 h4 {
+  margin-left: -10px;
+}
+
+.section6 img {
+  margin: 0 5px;
+  width: 30%;
+}
