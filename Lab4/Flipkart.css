@@ -232,6 +232,25 @@ body {
   width: 30%;
 }
 
-.section5 .ht img{
+.section5 .ht img {
   height: 150px;
+}
+
+.about {
+  padding: 0 30px;
+  color: #878787;
+}
+
+.about h6 {
+  font-weight: 500;
+}
+
+.about a {
+  color: #878787;
+}
+
+.about p {
+  font-size: 13px;
+  margin: 0;
+  line-height: 18px;
 }
