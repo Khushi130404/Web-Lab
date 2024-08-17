@@ -1,5 +1,13 @@
 body {
   background-color: #f0f0f0;
+  padding-top: 70px;
+}
+
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-custom {
@@ -253,4 +261,60 @@ body {
   font-size: 13px;
   margin: 0;
   line-height: 18px;
+}
+
+.section7 .sec7 img {
+  width: 130px;
+  height: 150px;
+  transition: transform 0.5s ease;
+}
+
+.section7 .sec7 img:hover {
+  transform: scale(1.05);
+}
+
+.img7 {
+  width: 100%;
+  height: 100%;
+}
+
+.section7 .sec7 {
+  background-color: white;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.section7 .row {
+  margin: 0 -72px;
+}
+
+.section7 .sec7 .row {
+  margin: 0;
+}
+
+.section7 .sec7 .row div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 47%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+}
+
+.section7 p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.section7 h6 {
+  color: green;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section7 h4 {
+  margin: 10px 0 15px 5px;
 }
