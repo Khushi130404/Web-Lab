@@ -264,11 +264,35 @@ nav {
 }
 
 .section7 img {
-  width: 140px;
-  height: 160px;
+  width: 130px;
+  height: 150px;
 }
 
 .img7 {
   width: 100% !important;
   height: 100% !important;
+}
+
+.section7 .sec7 {
+  background-color: white;
+  padding: 0px;
+}
+
+.section7 .row {
+  margin: 0 -72px;
+}
+
+.section7 .sec7 .row {
+  margin: 0;
+}
+
+.section7 .sec7 .row div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 44%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
 }
