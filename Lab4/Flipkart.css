@@ -275,7 +275,8 @@ nav {
 
 .section7 .sec7 {
   background-color: white;
-  padding: 0px;
+  margin: 0 10px;
+  padding: 20px;
 }
 
 .section7 .row {
@@ -291,8 +292,13 @@ nav {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 44%;
+  width: 47%;
   border: 1px solid #ccc;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
+}
+
+.section7 p {
+  margin: 0;
+  font-size: 16px;
 }
