@@ -262,3 +262,13 @@ nav {
   margin: 0;
   line-height: 18px;
 }
+
+.section7 img {
+  width: 140px;
+  height: 160px;
+}
+
+.img7 {
+  width: 100% !important;
+  height: 100% !important;
+}
