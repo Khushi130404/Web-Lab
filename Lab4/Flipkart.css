@@ -318,3 +318,31 @@ nav {
 .section7 h4 {
   margin: 15px 0 20px 5px;
 }
+
+footer {
+  background-color: #212121;
+  font-size: 13px;
+}
+
+footer .row {
+  margin: 0 -30px;
+}
+
+footer p {
+  text-transform: uppercase;
+  color: #878787;
+}
+
+footer a {
+  color: white;
+}
+
+footer ul p {
+  text-transform: none;
+  color: white;
+  margin: 0;
+}
+
+footer ul p a {
+  color: #007bff;
+}
