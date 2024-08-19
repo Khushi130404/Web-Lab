@@ -329,20 +329,42 @@ footer .row {
 }
 
 footer p {
-  text-transform: uppercase;
   color: #878787;
 }
 
 footer a {
   color: white;
+  font-weight: 600;
 }
 
 footer ul p {
-  text-transform: none;
   color: white;
   margin: 0;
+  font-size: 12px;
+}
+
+footer .part1 p {
+  text-transform: uppercase;
+}
+
+footer hr {
+  height: 200px;
+  background-color: white;
+  width: 1px;
 }
 
 footer ul p a {
   color: #007bff;
+  text-decoration-line: none;
+  font-weight: 600;
+}
+
+footer ul p a:hover {
+  text-decoration-line: none;
+}
+
+footer img {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
 }
