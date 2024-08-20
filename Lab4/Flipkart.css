@@ -3,6 +3,14 @@ body {
   padding-top: 70px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow: scroll;
+}
+
 nav {
   position: fixed !important;
   top: 0;
@@ -337,6 +345,10 @@ footer a {
   font-weight: 600;
 }
 
+footer a:hover {
+  color: white;
+}
+
 footer ul p {
   color: white;
   margin: 0;
@@ -347,10 +359,11 @@ footer .part1 p {
   text-transform: uppercase;
 }
 
-footer hr {
+footer .row1 hr {
   height: 200px;
-  background-color: white;
+  background-color: #878787;
   width: 1px;
+  opacity: 0.7;
 }
 
 footer ul p a {
@@ -361,10 +374,37 @@ footer ul p a {
 
 footer ul p a:hover {
   text-decoration-line: none;
+  color: #136ac7;
 }
 
-footer img {
+footer .row1 img {
   margin-right: 20px;
   width: 24px;
   height: 24px;
+}
+
+footer .hr {
+  height: 1px;
+  background-color: #878787;
+  opacity: 0.7;
+}
+
+footer .row2 .part1 img {
+  width: 13px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+footer .row2 .part1 li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: center;
+}
+
+footer .row2 .part1 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
 }
