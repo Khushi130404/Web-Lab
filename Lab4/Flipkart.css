@@ -2,12 +2,11 @@ body {
   background-color: #f0f0f0;
   padding-top: 70px;
 }
-/* Hide scrollbars for Webkit browsers */
+
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* Ensure overflow is set to scroll */
 body {
   overflow: scroll;
 }
@@ -346,6 +345,10 @@ footer a {
   font-weight: 600;
 }
 
+footer a:hover {
+  color: white;
+}
+
 footer ul p {
   color: white;
   margin: 0;
@@ -371,6 +374,7 @@ footer ul p a {
 
 footer ul p a:hover {
   text-decoration-line: none;
+  color: #136ac7;
 }
 
 footer .row1 img {
