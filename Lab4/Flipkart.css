@@ -2,6 +2,15 @@ body {
   background-color: #f0f0f0;
   padding-top: 70px;
 }
+/* Hide scrollbars for Webkit browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ensure overflow is set to scroll */
+body {
+  overflow: scroll;
+}
 
 nav {
   position: fixed !important;
@@ -351,6 +360,7 @@ footer .row1 hr {
   height: 200px;
   background-color: #878787;
   width: 1px;
+  opacity: 0.7;
 }
 
 footer ul p a {
@@ -363,7 +373,7 @@ footer ul p a:hover {
   text-decoration-line: none;
 }
 
-footer img {
+footer .row1 img {
   margin-right: 20px;
   width: 24px;
   height: 24px;
@@ -372,4 +382,25 @@ footer img {
 footer .hr {
   height: 1px;
   background-color: #878787;
+  opacity: 0.7;
+}
+
+footer .row2 .part1 img {
+  width: 13px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+footer .row2 .part1 li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: center;
+}
+
+footer .row2 .part1 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
 }
