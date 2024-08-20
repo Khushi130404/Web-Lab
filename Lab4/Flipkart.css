@@ -445,6 +445,11 @@ footer .row2 .part1 li {
 
 .section8 p {
   margin: 0;
+  font-size: 18px;
+}
+
+.section8 span {
+  color: black;
 }
 
 .section8 h6 {
