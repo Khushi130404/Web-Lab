@@ -408,3 +408,56 @@ footer .row2 .part1 li {
   align-items: center;
   align-items: center;
 }
+
+.section8 .part {
+  background-color: white;
+}
+
+.section8 .part .row div {
+  margin: 0;
+  padding: 0;
+}
+
+.section8 .part .col-md-5 .row div {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin: 0;
+  text-align: center;
+  padding: 12px;
+}
+
+.section8 .col-md-7 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 12px !important;
+  text-align: center;
+}
+
+.section8 .col-md-5 img {
+  height: 120px;
+}
+
+.section8 img {
+  width: 95%;
+  transition: transform 0.5s ease;
+}
+
+.section8 img:hover {
+  transform: scale(1.04);
+}
+
+.section8 p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.section8 span {
+  color: black;
+}
+
+.section8 h6 {
+  font-weight: 600;
+  color: green;
+}
