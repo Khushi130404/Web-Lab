@@ -440,7 +440,12 @@ footer .row2 .part1 li {
 }
 
 .section8 img {
-  width: 100%;
+  width: 95%;
+  transition: transform 0.5s ease;
+}
+
+.section8 img:hover {
+  transform: scale(1.04);
 }
 
 .section8 p {
