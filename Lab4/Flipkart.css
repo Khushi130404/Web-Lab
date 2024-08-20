@@ -347,9 +347,9 @@ footer .part1 p {
   text-transform: uppercase;
 }
 
-footer hr {
+footer .row1 hr {
   height: 200px;
-  background-color: white;
+  background-color: #878787;
   width: 1px;
 }
 
@@ -367,4 +367,9 @@ footer img {
   margin-right: 20px;
   width: 24px;
   height: 24px;
+}
+
+footer .hr {
+  height: 1px;
+  background-color: #878787;
 }
