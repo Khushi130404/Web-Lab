@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typewriter</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        color: #343a40;
+      }
+      #txt {
+        width: 100%;
+        height: 100px;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        padding: 10px;
+        font-family: "Courier New", Courier, monospace;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+        overflow: hidden;
+        font-size: 18px;
+      }
+      .btn-grid div {
+        margin: 5px;
+        padding: 10px;
+        background-color: #6c757d;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+      }
+      .btn-grid div:hover {
+        background-color: #5a6268;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div id="txt"></div>
+      </div>
+      <div class="row mt-3 btn-grid">
+        <div onclick="type(this)">1</div>
+        <div onclick="type(this)">2</div>
+        <div onclick="type(this)">3</div>
+        <div onclick="type(this)">4</div>
+        <div onclick="type(this)">5</div>
+        <div onclick="type(this)">6</div>
+        <div onclick="type(this)">7</div>
+        <div onclick="type(this)">8</div>
+        <div onclick="type(this)">9</div>
+        <div onclick="type(this)">0</div>
+      </div>
+      <div class="row mt-3 btn-grid">
+        <div onclick="type(this)">Q</div>
+        <div onclick="type(this)">W</div>
+        <div onclick="type(this)">E</div>
+        <div onclick="type(this)">R</div>
+        <div onclick="type(this)">T</div>
+        <div onclick="type(this)">Y</div>
+        <div onclick="type(this)">U</div>
+        <div onclick="type(this)">I</div>
+        <div onclick="type(this)">O</div>
+        <div onclick="type(this)">P</div>
+      </div>
+      <div class="row mt-3 btn-grid">
+        <div onclick="type(this)">A</div>
+        <div onclick="type(this)">S</div>
+        <div onclick="type(this)">D</div>
+        <div onclick="type(this)">F</div>
+        <div onclick="type(this)">G</div>
+        <div onclick="type(this)">H</div>
+        <div onclick="type(this)">J</div>
+        <div onclick="type(this)">K</div>
+        <div onclick="type(this)">L</div>
+      </div>
+      <div class="row mt-3 btn-grid">
+        <div onclick="type(this)">Z</div>
+        <div onclick="type(this)">X</div>
+        <div onclick="type(this)">C</div>
+        <div onclick="type(this)">V</div>
+        <div onclick="type(this)">B</div>
+        <div onclick="type(this)">N</div>
+        <div onclick="type(this)">M</div>
+      </div>
+      <div class="row mt-3 btn-grid">
+        <div onclick="type(this)">.</div>
+        <div onclick="type(this)">,</div>
+        <div onclick="type(this)">!</div>
+        <div onclick="type(this)">?</div>
+        <div onclick="type(this)">@</div>
+        <div onclick="type(this)">#</div>
+        <div onclick="type(this)">$</div>
+        <div onclick="type(this)">%</div>
+        <div onclick="type(this)">&</div>
+        <div onclick="type(this)">*</div>
+      </div>
+      <div class="row mt-3 btn-grid">
+        <div onclick="clearText()">Clear</div>
+      </div>
+    </div>
+
+    <script>
+      function type(bt) {
+        const txt = document.getElementById("txt");
+        const textToAdd = bt.innerHTML;
+
+        let i = 0;
+        function typeWriter() {
+          if (i < textToAdd.length) {
+            txt.innerHTML += textToAdd.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+          }
+        }
+        typeWriter();
+      }
+
+      function clearText() {
+        document.getElementById("txt").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
