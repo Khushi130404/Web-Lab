@@ -9,6 +9,7 @@
         font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
+        background-color: #f8f9fa;
         align-items: center;
         height: 100vh;
         margin: 0;
@@ -16,9 +17,21 @@
       }
       .container {
         text-align: center;
-        padding: 20px;
-        border: 2px solid #333;
+        padding: 50px;
+        border: none;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
         border-radius: 8px;
+      }
+      h2 {
+        color: #8c8a8a;
+      }
+      input {
+        padding: 10px;
+        background-color: #f8f9fa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border: transparent;
+        border-radius: 5px;
       }
       .info {
         font-size: 18px;
@@ -32,7 +45,7 @@
       <input
         type="text"
         id="inputField"
-        placeholder="Click here and type something"
+        placeholder="Type something"
         autofocus
       />
       <div class="info" id="info"></div>
