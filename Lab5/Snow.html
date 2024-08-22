@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snowfall Animation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #001f3f; /* Dark blue background */
+      }
+      .snowflake {
+        position: absolute;
+        top: -50px; /* Start above the screen */
+        pointer-events: none;
+        animation: fall linear infinite;
+      }
+
+      @keyframes fall {
+        to {
+          transform: translateY(100vh);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Snowflake creation
+      function createSnowflake() {
+        const snowflake = document.createElement("img");
+        snowflake.src = "https://via.placeholder.com/20"; // Placeholder image, replace with your SVG
+        snowflake.classList.add("snowflake");
+        snowflake.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + "s"; // Random fall speed
+        snowflake.style.opacity = Math.random(); // Random opacity
+        snowflake.style.transform = `scale(${Math.random()})`; // Random size
+
+        document.body.appendChild(snowflake);
+
+        // Remove snowflake after it falls off screen
+        snowflake.addEventListener("animationend", () => {
+          snowflake.remove();
+        });
+      }
+
+      // Create snowflakes every 100ms
+      setInterval(createSnowflake, 100);
+    </script>
+  </body>
+</html>
