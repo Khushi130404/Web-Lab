@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find String Between Vowels</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        padding-right: 35px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .form-group input:focus {
+        border-color: #007bff;
+      }
+      .result {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #007bff;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 105%;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Find String Between Vowels</h2>
+      <div class="form-group">
+        <label for="inputWord">Enter a word:</label>
+        <input type="text" id="inputWord" name="inputWord" />
+      </div>
+      <button onclick="findStringBetweenVowels()">Find</button>
+      <div id="result" class="result"></div>
+    </div>
+    <script>
+      function findStringBetweenVowels() {
+        let text = document.getElementById("inputWord").value;
+        let i = text.indexOf("a");
+        let j = text.lastIndexOf("a");
+        if (i === -1) {
+          alert("No occurence of 'a'");
+        } else if (i === j) {
+          alert("Only 1 Occurence of 'a'");
+        } else {
+          alert(text.slice(i + 1, j));
+        }
+      }
+    </script>
+  </body>
+</html>
