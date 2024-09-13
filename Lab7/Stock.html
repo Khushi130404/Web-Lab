@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Stock Simulation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+      }
+      h3 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      li:hover {
+        background-color: #e0e0e0;
+      }
+      .stock {
+        font-weight: bold;
+        color: #4caf50;
+      }
+      .label {
+        font-weight: bold;
+        color: #555;
+      }
+    </style>
     <script>
       function fetchStock() {
         var xhttp = new XMLHttpRequest();
@@ -24,24 +73,24 @@
     </script>
   </head>
   <body>
-    <div>
-      <h3>Stock Stimulation</h3>
+    <div class="container">
+      <h3>Stock Simulation</h3>
       <ul>
         <li>
-          <div>NIFTY :</div>
-          <div class="stock"></div>
+          <div class="label">NIFTY :</div>
+          <div class="stock">Loading...</div>
         </li>
         <li>
-          <div>SENSEX :</div>
-          <div class="stock"></div>
+          <div class="label">SENSEX :</div>
+          <div class="stock">Loading...</div>
         </li>
         <li>
-          <div>USD/INR :</div>
-          <div class="stock"></div>
+          <div class="label">USD/INR :</div>
+          <div class="stock">Loading...</div>
         </li>
         <li>
-          <div>QVCEL :</div>
-          <div class="stock"></div>
+          <div class="label">QVCEL :</div>
+          <div class="stock">Loading...</div>
         </li>
       </ul>
     </div>
