@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fetchStock() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var nums = JSON.parse(this.responseText);
+            var stocks = document.getElementsByClassName("stock");
+            for (var i = 0; i < stocks.length; i++) {
+              stocks[i].innerHTML = nums[i];
+            }
+          }
+        };
+        xhttp.open("GET", "Stock.php", true);
+        xhttp.send();
+      }
+      setInterval(fetchStock, 2500);
+      window.onload = fetchStock;
+    </script>
+  </head>
+  <body>
+    <div>
+      <h3>Stock Stimulation</h3>
+      <ul>
+        <li>
+          <div>NIFTY :</div>
+          <div class="stock"></div>
+        </li>
+        <li>
+          <div>SENSEX :</div>
+          <div class="stock"></div>
+        </li>
+        <li>
+          <div>USD/INR :</div>
+          <div class="stock"></div>
+        </li>
+        <li>
+          <div>QVCEL :</div>
+          <div class="stock"></div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
