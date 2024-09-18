@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Controls</title>
+    <style>
+      body {
+        padding-top: 50px;
+        background-color: black;
+        margin: 0;
+      }
+      video,
+      .row div,
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      video {
+        border: 2px solid aliceblue;
+        border-radius: 20px;
+      }
+
+      button {
+        width: 100px;
+        height: 50px;
+        margin: 20px;
+        border: none;
+        border-radius: 15px;
+        font-size: 17px;
+        font-weight: 600;
+        background-color: aliceblue;
+        transition: transform 0.5s ease;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        background-color: rgb(184, 188, 200);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <video id="video" width="660" height="415" controls>
+            <source src="image/shinChan.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <button onclick="pauseVideo()">Pause</button>
+        <button onclick="playVideo()">Play</button>
+        <button onclick="smallSize()">Small</button>
+        <button onclick="normalSize()">Normal</button>
+        <button onclick="largeSize()">Large</button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const video = document.getElementById("video");
+
+        function pauseVideo() {
+          video.pause();
+        }
+
+        function playVideo() {
+          video.play();
+        }
+
+        function smallSize() {
+          video.style.width = "560px";
+          video.style.height = "315px";
+        }
+
+        function normalSize() {
+          video.style.width = "660px";
+          video.style.height = "415px";
+        }
+
+        function largeSize() {
+          video.style.width = "800px";
+          video.style.height = "450px";
+        }
+
+        window.pauseVideo = pauseVideo;
+        window.playVideo = playVideo;
+        window.smallSize = smallSize;
+        window.normalSize = normalSize;
+        window.largeSize = largeSize;
+      });
+    </script>
+  </body>
+</html>

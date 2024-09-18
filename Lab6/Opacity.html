@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        background-color: rgb(238, 220, 245);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(26, 6, 31);
+        position: relative;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        function animationBox() {
+          $(".box").animate(
+            {
+              opacity: "0.4",
+              width: "500px",
+              height: "500px",
+            },
+            2000,
+            function () {
+              $(".box").animate(
+                { opacity: "1", width: "100px", height: "100px" },
+                2000,
+                animationBox
+              );
+            }
+          );
+        }
+        animationBox();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
