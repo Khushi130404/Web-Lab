@@ -24,8 +24,8 @@
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
-            <xs:attribute name="orderid" type="xs:string" use="required"/>
         </xs:sequence>
+      <xs:attribute name="orderid" type="xs:string" use="required"/>
     </xs:complexType>
 </xs:element>
 </xs:schema>
