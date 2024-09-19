@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
 <library>
     <book>
         <title>Applied Physics</title>
@@ -31,3 +32,32 @@
         <genre>Mathamatics</genre>
     </book>
 </library>
+
+
+<!-- <?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE message [
+<!ELEMENT message (email|letter)>
+<!ELEMENT email (header, subject?, text+)>
+<!ELEMENT header (sender, recipient*, date?)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT recipient (#PCDATA)>
+<!ELEMENT sender (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT letter (letterhead, text)>
+<!ELEMENT letterhead (sender,recipient*,date)>
+<!ATTLIST email reply (yes|no) "no">
+<!ATTLIST letter reply (yes|no) "no">
+]>
+<message>
+    <email>
+        <header>
+            <sender>khushi1304@gmail.com</sender>
+            <recipient>nita2410@gmail.com</recipient>
+        </header>
+        <subject>Re : XML</subject>
+        <text>I am working with XML right now.</text>
+    </email>
+</message> -->
+
+<!-- https://www.truugo.com/xml_validator/ -->
