@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="item.xsl"?>
+<items>
+    <item>
+        <name>Notebook</name>
+        <price>250</price>
+    </item>
+    <item>
+        <name>Pencil</name>
+        <price>20</price>
+    </item>
+    <item>
+        <name>Backpack</name>
+        <price>500</price>
+    </item>
+    <item>
+        <name>Water Bottle</name>
+        <price>150</price>
+    </item>
+    <item>
+        <name>Pen</name>
+        <price>100</price>
+    </item>
+    <item>
+        <name>Smartphone Cover</name>
+        <price>299</price>
+    </item>
+</items>
