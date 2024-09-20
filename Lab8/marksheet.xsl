@@ -22,6 +22,9 @@
             </head>
             <body>
                 <h1>Semester Mark Sheet</h1>
+                <p><strong>Student Name:</strong> <xsl:value-of select="marksheet/student/name"/></p>
+                <p><strong>Roll Number:</strong> <xsl:value-of select="marksheet/student/roll_number"/></p>
+                <p><strong>Semester:</strong> <xsl:value-of select="marksheet/student/semester"/></p>
                 <table>
                     <tr>
                         <th>Subject</th>
@@ -36,9 +39,6 @@
                         </tr>
                     </xsl:for-each>
                 </table>
-                <p><strong>Student Name:</strong> <xsl:value-of select="marksheet/student/name"/></p>
-                <p><strong>Roll Number:</strong> <xsl:value-of select="marksheet/student/roll_number"/></p>
-                <p><strong>Semester:</strong> <xsl:value-of select="marksheet/student/semester"/></p>
             </body>
         </html>
     </xsl:template>
