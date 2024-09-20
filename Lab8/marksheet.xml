@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marksheet>
+    <student>
+        <name>Khushi</name>
+        <roll_number>186147</roll_number>
+        <semester>3</semester>
+        <subjects>
+            <subject>
+                <name>Java</name>
+                <marks>88</marks>
+                <max_marks>100</max_marks>
+            </subject>
+            <subject>
+                <name>DSA</name>
+                <marks>92</marks>
+                <max_marks>100</max_marks>
+            </subject>
+            <subject>
+                <name>Mathematics</name>
+                <marks>85</marks>
+                <max_marks>100</max_marks>
+            </subject>
+            <subject>
+                <name>DBMS</name>
+                <marks>89</marks>
+                <max_marks>100</max_marks>
+            </subject>
+            <subject>
+                <name>Python</name>
+                <marks>94</marks>
+                <max_marks>100</max_marks>
+            </subject>
+            <subject>
+                <name>Dotnet</name>
+                <marks>90</marks>
+                <max_marks>100</max_marks>
+            </subject>
+        </subjects>
+    </student>
+</marksheet>
