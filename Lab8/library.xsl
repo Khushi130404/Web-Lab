@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/">
-        <html>
-            <body>
-                <h2>Library Books</h2>
-                <table border="1px">
-                    <tr bgcolor="#9acd32">
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>ISNB</th>
-                        <th>Quantity</th>
-                    </tr>
-                    <xsl:for-each select="library/book">
-                        <tr>
-                            <td><xsl:value-of select="title"/></td>
-                            <td><xsl:value-of select="author"/></td>
-                            <td><xsl:value-of select="isnb"/></td>
-                            <td><xsl:value-of select="quantity"/></td>
-                        </tr>
-                    </xsl:for-each>
-                </table>
-            </body>
-        </html>
-    </xsl:template>
-</xsl:stylesheet>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
+<library>
+    <book>
+        <title>Applied Physics</title>
+        <author>Dattu Joshi</author>
+        <isbn>978-12032-0001</isbn>
+        <quantity>10</quantity>
+    </book>
+    <book>
+        <title>Computer Organization</title>
+        <author>Ramesh Gaonker</author>
+        <isbn>978-12032-0002</isbn>
+        <quantity>63</quantity>
+    </book>
+    <book>
+        <title>Data Science for Beginners</title>
+        <author>Corman</author>
+        <isbn>978-12032-0003</isbn>
+        <quantity>26</quantity>
+    </book>
+    <book>
+        <title>Applied Mathematics</title>
+        <author>Arwin Kreyzik</author>
+        <isbn>978-12032-0004</isbn>
+        <quantity>12</quantity>
+    </book>
+    <book>
+        <title>Combinatorial Methods</title>
+        <author>Rozen</author>
+        <isbn>978-12032-0005</isbn>
+        <quantity>32</quantity>
+    </book>
+</library>
