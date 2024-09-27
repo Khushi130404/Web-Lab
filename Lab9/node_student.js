@@ -6,7 +6,21 @@ const PORT = 8080;
 
 http
   .createServer((req, res) => {
-    if (req.method === "GET" && req.url.startsWith("/student")) {
+    // Display the form for PRN input
+    if (req.method === "GET" && req.url === "/") {
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.write(`
+        <h1>Student Information Lookup</h1>
+        <form action="/student" method="get">
+          <label for="prn">Enter PRN:</label>
+          <input type="text" id="prn" name="prn" required />
+          <input type="submit" value="Submit" />
+        </form>
+      `);
+      res.end();
+    }
+    // Handle the student information request
+    else if (req.method === "GET" && req.url.startsWith("/student")) {
       const query = url.parse(req.url, true).query;
       const prn = query.prn;
 
