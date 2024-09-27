@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Khushi Patel",
+    "prn": "123456",
+    "branch": "Computer Science",
+    "semester": "5",
+    "address": "OP Road, Vadodara",
+    "subjects": [
+      "Basic Web Programming",
+      "Computer Organization",
+      "Computer Graphics"
+    ]
+  },
+  {
+    "name": "Dhriti Modi",
+    "prn": "789012",
+    "branch": "Electrical Engineering",
+    "semester": "3",
+    "address": "Padra, Vadodara",
+    "subjects": ["Circuit Theory", "Electromagnetics", "Signal Processing"]
+  },
+  {
+    "name": "Manan Patel",
+    "prn": "893172",
+    "branch": "mechanical Engineering",
+    "semester": "4",
+    "address": "Anand",
+    "subjects": ["Engg. Drawing", "Fitting", "Machine Design"]
+  },
+  {
+    "name": "Hetvik Shah",
+    "prn": "993013",
+    "branch": "Chemical Engineering",
+    "semester": "3",
+    "address": "Akota, Vadodara",
+    "subjects": ["Inorganic", "Plastic", "Hydrocarbons"]
+  }
+]
