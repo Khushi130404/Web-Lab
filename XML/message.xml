@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+    <letter reply="yes">
+        <letterHead>
+            <name>Khushi</name>
+            <address>Vadodara</address>
+            <date>13-04-2024</date>
+            <subject>A letter</subject>
+        </letterHead>
+        <letterBody>
+            <text>This is a letter body</text>
+            <writer>Krutika</writer>
+        <letterBody>
+    </letter>
+</message>

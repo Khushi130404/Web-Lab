@@ -1,0 +1,16 @@
+# XML validation :-
+
+XML with correct syntax is "Well Formed" XML.
+XML validated against a DTD is "Valid" XML.
+
+# Well Formed XML Documents :-
+
+- A "Well Formed" XML document has correct XML syntax.
+- XML documents must have a root element
+- XML elements must have a closing tag
+- XML tags are case sensitive
+- XML elements must be properly nested
+- XML attribute values must be quoted
+
+
+
