@@ -29,3 +29,25 @@ XQuery - a language for querying XML documents
 - <xsl:template> element is used to build templates
 - The match attribute is used to associate a  template with an XML element and to define a  template for the entire XML document
 - The value of the match attribute is an XPath expression (i.e. match="/" defines the whole document).
+
+
+# <xsl:apply-templates> :-
+
+- <xsl:apply-templates> element applies a template  to the current element or to the current element's  child nodes.
+- Adding a select attribute to the <xsl:apply- templates> element will process only the child  element that matches the value of the attribute.
+
+
+# <xsl:copy> and <xsl:copy-of> :-
+
+- <xsl:template match=“OL”>
+- <xsl:copy-of select=“.” />
+<!-- this will copy the OL tag and all of its  subelements -->
+
+- </xsl:template>
+- <xsl:template match=“OL”>
+- <xsl:copy	/>
+<!-- this will copy the OL tag but leave all of its  subelements out -->
+
+- </xsl:template>
+- <xsl:copy-of …> expects a select=“expression”
+- argument, and copies the result of expression.
