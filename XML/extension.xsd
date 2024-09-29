@@ -10,19 +10,20 @@
 </xs:complexType>
 <xs:complexType name="fullInfo">
     <xs:complexContent>
-        <xs:extension base="nameInfo"/>
-        <xs:sequence>
-            <xs:element name="age" type="xs:positiveInteger">
-            <xs:element name="branch">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="CSE">
-                        <xs:enumeration value="Electronics">
-                        <xs:enumeration value="Mechanical">
-                        <xs:enumeration value="Chemical">
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-        </xs:sequence>
+        <xs:extension base="nameInfo">
+            <xs:sequence>
+                <xs:element name="age" type="xs:positiveInteger"/>
+                <xs:element name="branch">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="CSE"/>
+                            <xs:enumeration value="Electronics"/>
+                            <xs:enumeration value="Mechanical"/>
+                            <xs:enumeration value="Chemical"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:extension>
     <xs:complexContent>
 </xs:complexType>
