@@ -1,0 +1,7 @@
+XML = Extensible Markup Language
+SGML = Standard Generalized Markup Language
+
+- In XML tags are not pre-defined as HTML
+- XML focuses on data while HTML focuses on apprearance
+- XML can be formated using XSLT
+- XML can be validated using either DTD or Schema (XSD)
