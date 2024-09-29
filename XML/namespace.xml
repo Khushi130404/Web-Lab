@@ -1,0 +1,14 @@
+// How to Use Namespaces
+// Solving name conflicts using prefix
+
+<t1:table>
+    <t1:tr>
+        <t1:td>Data-1</t1:td>
+        <t1:td>Data-2</t1:td>
+        <t1:td>Data-3</t1:td>
+    </t1:tr>
+</t1:table>
+<t2:table>
+	<t2:name> Khushi </t2:name>
+	<t2:width> 47 </t2:width>
+</t2:table>
