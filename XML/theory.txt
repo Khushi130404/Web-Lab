@@ -15,3 +15,9 @@ Why should not use Attributes ?
 
 // First line
 <?xml version="1.0" encoding="UTF-8"?>
+
+Advantages of XML :-
+- Language independent
+- OS independent
+- Have a tree like structure
+- Simplifies data sharing
