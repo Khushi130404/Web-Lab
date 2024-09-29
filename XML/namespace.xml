@@ -12,3 +12,25 @@
 	<t2:name> Khushi </t2:name>
 	<t2:width> 47 </t2:width>
 </t2:table>
+
+// Way to specifiy Namespaces
+<mytable>
+    <t1:table xmlns:t1="http:// www.w3.org/TR/html4 /">
+        <t1:tr>
+            <t1:td>student</t1:td>
+            <t1:td>width</t1:td>
+        </t1:tr>
+    </t1:table>
+</mytable>
+
+// Another way to specify prefix is as follows:
+<root xmlns:t1=”http://www.w3.org/TR/html4/”>
+<mytable>
+    <t1:table>
+        <t1:tr>
+            <t1:td>student</t1:td>
+            <t1:td>width</t1:td>
+        </t1:tr>
+    </t1:table>
+</mytable>
+

@@ -1,5 +1,6 @@
 XML = Extensible Markup Language
 SGML = Standard Generalized Markup Language
+URI = Uniform Resource Indentifier
 
 XML v/s HTML
 - In XML tags are not pre-defined as HTML
@@ -21,3 +22,4 @@ Advantages of XML :-
 - OS independent
 - Have a tree like structure
 - Simplifies data sharing
+
