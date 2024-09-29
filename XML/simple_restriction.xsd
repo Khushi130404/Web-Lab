@@ -1,0 +1,10 @@
+<xs:element name="shoesize">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="15"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
