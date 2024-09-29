@@ -1,7 +1,17 @@
 XML = Extensible Markup Language
 SGML = Standard Generalized Markup Language
 
+XML v/s HTML
 - In XML tags are not pre-defined as HTML
 - XML focuses on data while HTML focuses on apprearance
 - XML can be formated using XSLT
 - XML can be validated using either DTD or Schema (XSD)
+- XML allows multiple output forms while HTML have single representation
+
+Why should not use Attributes ?
+- There cant contain multiple value.
+- They cant have tree like structure.
+- The cant be expanded in future.
+
+// First line
+<?xml version="1.0" encoding="UTF-8"?>
