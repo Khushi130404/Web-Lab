@@ -1,0 +1,31 @@
+XSL = Extensible Stylesheet Language
+
+# XSL  consists of four parts:-
+
+XSLT - a language for transforming XML  documents
+XPath - a language for navigating in XML  documents
+XSL- FO - a language for formatting XML  documents
+XQuery - a language for querying XML documents 
+
+# With XSLT we can :-
+
+- add/remove elements and attributes to or from  the output file
+- rearrange and sort elements
+- perform tests and make decisions about which  elements to hide and display
+
+// Declaration for XSL
+<?xml version="1.0 encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+
+// Declaration of XML
+<?xml version="1.0 encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
+
+# <xsl:template> :-
+
+- An XSL style sheet consists of one or more set of  rules that are called templates
+- A template contains rules to apply when a  specified node is matched
+- <xsl:template> element is used to build templates
+- The match attribute is used to associate a  template with an XML element and to define a  template for the entire XML document
+- The value of the match attribute is an XPath expression (i.e. match="/" defines the whole document).
