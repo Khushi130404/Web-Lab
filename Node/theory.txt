@@ -57,3 +57,17 @@
 - Now, your computer works as a server!
 - If anyone tries to access your computer on port 8080, they will get a "Hello World!" message in return!
 - Start your internet browser, and type in the address: http://localhost:8080
+
+
+# Create Files/ Update files :-
+
+- The File System module has methods for creating new files:
+    fs.appendFile()
+    fs.open()
+    fs.writeFile()
+
+- Delete Files
+    fs.unlink() 
+
+-Rename Files
+    fs.rename()
