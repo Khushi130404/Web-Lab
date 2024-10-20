@@ -1,0 +1,7 @@
+# Secure Electronic Transaction (SET):-
+
+- It is a standard created to protect credit card transactions
+- It was developed by Mastercard, Visa
+- It is not a payment system
+- It is Protocol for secure transactions between customer, merchent & bank
+
