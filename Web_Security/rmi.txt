@@ -1,0 +1,5 @@
+# RMI :-
+
+- Remote Method Invocation
+- It is a mechanism in Java that allows one system to access object of another system
+- It basically enables the communication between 2 different Java program 
