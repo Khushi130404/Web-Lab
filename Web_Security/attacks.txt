@@ -52,3 +52,8 @@ There are main 2 types of attacks :
 - Attacker tries all password to log into user's account.
 - Diff between this and Brute Force is that Brute Force tries all possiblilities.
 
+8. URL Interpretation :-
+
+- This is used to acces unauthorised web pages of web app.
+- Attacker changes the certain part of URL to acces feature.
+
