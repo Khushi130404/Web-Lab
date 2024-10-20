@@ -21,3 +21,12 @@ Goals of Web Security :-
     - There are 2 types of Encryption.
         1. Symmetric-Key = Where Encryption and Decreption key are same
         2. Asymmetric-Key = Where Encryption and Decreption key are different
+    
+    2. Access Control :-
+
+    - This tool make sure who can access a system information.
+    - This is done by having a set of rules and policies about who can access data.
+    - This includes person's credentials to verifiy access.
+    - Credentials can be username, e-mail, computer's series number.
+    - Credentials that cannot be share provides most security. 
+
