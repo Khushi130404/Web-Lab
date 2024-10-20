@@ -17,3 +17,12 @@
 8. Merchant confirms and place order
 9. Merchant provides good & services to the customer
 10. Merchant request for payment 
+
+# Digital Signature :-
+
+Digital Signature has 2 separate piece of information :
+1. Order information (OI) = For Merchant
+2. Payment information (PI) = For Bank
+
+- Bank cannot access OI & Merchant cannot access PI
+ 
