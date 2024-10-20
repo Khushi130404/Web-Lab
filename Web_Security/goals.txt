@@ -57,3 +57,11 @@ Goals of Web Security :-
 - Integrity makes sure that data is reliable and comes from trusted source.
 - It also includes that data is only accessible by authorized user.
 - It also includes that data is not altered by wrong person.
+
+
+
+3. Availability :-
+
+- Availability means data is always accessible to authorized user.
+- Data should also be accessible at a time.
+- It includes prevention of DOS (Denial of Service) attacks or system failure. 
