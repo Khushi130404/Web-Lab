@@ -23,3 +23,9 @@ There are main 2 types of attacks :
 - In this, Session is hijacked by attacker.
 - And attacker steels Session cookies.
 - This cookies helps to retrive all user's information.
+
+4. Phising :- 
+
+- In this attack, attacker pretends to be a trust worthy source.
+- And gets the user's credentials like username & password.
+- It also steels info like user's creditcard number.
