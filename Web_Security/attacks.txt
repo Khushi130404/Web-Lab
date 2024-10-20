@@ -35,3 +35,13 @@ There are main 2 types of attacks :
 - It tries to guess the user's password till it gets it right.
 - This is a hit and trial method.
 - This tries all possible outcomes.
+
+6. Denial Of Service :-
+
+- In this attack, server is hacked by attacker.
+- It creates flood & traffic in server.
+- Due to this client cannot acces data send by server.
+- There are 3 types :-
+    1. Volume-based attack = It saturates the bandwidth
+    2. Protocol-based attack = It consumes the server resources
+    3. Application-based attack = It crashes the web application
