@@ -30,3 +30,10 @@ Goals of Web Security :-
     - Credentials can be username, e-mail, computer's series number.
     - Credentials that cannot be share provides most security. 
 
+
+    3. Authentication :-
+
+    - This tool verifies the user.
+    - It is done by make user log into system with username and password.
+    
+    
