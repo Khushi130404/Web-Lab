@@ -39,3 +39,11 @@ Digital Signature has 2 separate piece of information :
 2. Merchant verifies the dual signature to ensure that order hasnt been temperd with
 3. Merchant process the OI & sends the PI to bank
 4. Merchant send confirmation information to customer
+
+# Payment Gatewat :-
+
+1. Bank verifies all the certificates
+2. Bank Checks merchant's signature to ensure authenticity
+3. Bank checks the dual signature on payment to ensure everything matches
+4. Bank verifies the transactions & give authorization to payment
+5. Bank sends confirmation to Merchant
