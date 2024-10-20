@@ -1,0 +1,14 @@
+Types Of Attacks :- 
+
+There are main 2 types of attacks : 
+1. Web based attack
+2. System based attack
+
+# Web Based Attacks :-
+
+1. Injection attack :-
+
+- In Injection attack additional code is inserted into the web page.
+- Ex. SQL Injection, Code Injection, XML Injection, Log Injection
+
+2. 
