@@ -57,3 +57,8 @@ There are main 2 types of attacks :
 - This is used to acces unauthorised web pages of web app.
 - Attacker changes the certain part of URL to acces feature.
 
+9. File Inclusion Attack :-
+
+- In this attack, attacker access unauthorised file on web server.
+- It can read, add, delete or modify it.
+
