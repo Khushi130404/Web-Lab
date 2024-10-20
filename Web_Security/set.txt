@@ -32,3 +32,10 @@ Digital Signature has 2 separate piece of information :
 2. Initiate Responce = Merchant sends a signed Responce
 3. Purchase Request = Customer sends Order information
 4. Purchase Responce = Merchant confirms order
+
+# What Merchant do ?
+
+1. Merchant ensures customer's certificate, if it is valid
+2. Merchant verifies the dual signature to ensure that order hasnt been temperd with
+3. Merchant process the OI & sends the PI to bank
+4. Merchant send confirmation information to customer
