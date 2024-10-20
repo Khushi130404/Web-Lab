@@ -4,3 +4,20 @@ Goals of Web Security :-
 2. Integrity of data
 3. Availability of data to authorized user
 
+
+
+1. Confidentiality :-
+
+- Confidentiality refers to the privacy of data
+- It make sure that data cannot be read or write by the wring person
+
+# Tools of Confidentiality :-
+    
+    1. Encryption : -
+
+    - This tool makes the data unreadable using a secret key called Encryption key.
+    - This key converts simple data into human unreadable form.
+    - This form of data can be read by using another secret key called Decreption key.
+    - There are 2 types of Encryption.
+        1. Symmetric-Key = Where Encryption and Decreption key are same
+        2. Asymmetric-Key = Where Encryption and Decreption key are different
