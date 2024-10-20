@@ -42,3 +42,10 @@ Goals of Web Security :-
     - This tool decides whether to allow user to do certain task or not.
     - Authorization is given by access control policy.
     - This includes the acces of data, system, feature, application ect.
+
+    5. Physical Security :-
+
+    - This tool refers to physical security given to the place where data is stored.
+    - Generally data is stored in servers and data centers.
+    - Providing a CCTV camera, a security guard to prevent theft comes under this.
+    - This also includes security form natural disasters like fire & earth quake.
