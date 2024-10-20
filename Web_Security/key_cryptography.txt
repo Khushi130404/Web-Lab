@@ -16,3 +16,13 @@
 - Both Keys are Asymmetric
 - Allows secure communication without using Key Destribution Center (KDN)
 - Varifies authenticity of user, makes sure message comes from sender
+
+# How Public Key Works :-
+
+- Sender have a privet key
+- Which he uses to Decrept the message or sign the message
+- Receiver have a Public Key
+- Which he uses to Encryption the message or verifiy the signature
+- Message can be Encrypted using both Public & Privet Key
+- Public key can not Decrept the message
+- Hence data of sender cannot be modify by receiver
