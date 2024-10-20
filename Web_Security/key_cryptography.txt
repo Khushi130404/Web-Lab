@@ -26,3 +26,11 @@
 - Message can be Encrypted using both Public & Privet Key
 - Public key can not Decrept the message
 - Hence data of sender cannot be modify by receiver
+- Digital signatures provides ability to varify author, date & time
+
+# Key Distribution :-
+
+- A can create a key and deliver to B
+- A trusted 3rd party C can deliver the key to both A & B
+- If A & B have communicated before then they can share prev privet key & generate new public key
+- If A and B can securely communicate with a third party (C), C can relay the new key between them.
