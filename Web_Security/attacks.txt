@@ -29,3 +29,9 @@ There are main 2 types of attacks :
 - In this attack, attacker pretends to be a trust worthy source.
 - And gets the user's credentials like username & password.
 - It also steels info like user's creditcard number.
+
+5. Brute Force :-
+
+- It tries to guess the user's password till it gets it right.
+- This is a hit and trial method.
+- This tries all possible outcomes.
