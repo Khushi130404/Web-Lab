@@ -1,0 +1,8 @@
+# Cross Site Scripting (XSS) :-
+
+- In cross site scripting attacker injects malicious code
+- Mostly add javascrip in user's browser
+- Attacker dont directly attack the user
+- They wait for user to reach the malicious section
+- User runs that section thinking it is part of website
+- This can lead to account Hijacking, cookie theft, settings change, denial of service 
