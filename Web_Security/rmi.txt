@@ -28,3 +28,11 @@
 4. Sever-side RRL sends request to Skeleton
 5. Steleton invokes the remote method of actual object on server
 6. Result is send back to client through Skeleton, RRL & Stub
+
+
+# Goals of RMI :-
+
+- To minimize the complexity of application
+- Reduce the difference between remote & proxy object
+- Preserve security
+- Distributed garbage collection
