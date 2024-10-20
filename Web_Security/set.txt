@@ -3,5 +3,17 @@
 - It is a standard created to protect credit card transactions
 - It was developed by Mastercard, Visa
 - It is not a payment system
-- It is Protocol for secure transactions between customer, merchent & bank
+- It is Protocol for secure transactions between customer, merchant & bank
 
+# Steps of SET Transaction :-
+
+1. Customer opens an account at creditcard company
+2. Customer gets certificate from bank
+3. Merchant also have certificate for verification
+4. Customer place an order with merchant
+5. Bank verifies the certificate of merchant
+6. Order & payment details are settings
+7. Merchant requests for payment authorization from Bank
+8. Merchant confirms and place order
+9. Merchant provides good & services to the customer
+10. Merchant request for payment 
