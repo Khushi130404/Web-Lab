@@ -7,7 +7,7 @@
 - User runs that section thinking it is part of website
 - This can lead to account Hijacking, cookie theft, settings change, denial of service 
 
-Types of XSS Attack :- 
+# Types of XSS Attack :- 
 
 1. Presistent XSS :-
 
@@ -23,3 +23,8 @@ Types of XSS Attack :-
 
 - Issues lies in website's client-side browser
 - Not server-side
+
+# Prevention of XSS Attack :- 
+
+- Check all the form fileds like inputs, headers, cookies & queries
+- Set limitation in input fileds
