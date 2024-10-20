@@ -1,0 +1,6 @@
+Goals of Web Security :- 
+
+1. confidentiality of data
+2. Integrity of data
+3. Availability of data to authorized user
+
