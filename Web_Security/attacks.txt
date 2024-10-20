@@ -67,3 +67,11 @@ There are main 2 types of attacks :
 - Attacker attacks the common connection between server & client.
 - It acts as a bridge.
 - Attacker is able to read, insert, modify the data. 
+
+# System Based Attack :-
+
+1. Virus
+2. Worm
+3. Trojan Horse
+4. Backdoors
+5. Bots
