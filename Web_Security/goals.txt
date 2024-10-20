@@ -49,3 +49,11 @@ Goals of Web Security :-
     - Generally data is stored in servers and data centers.
     - Providing a CCTV camera, a security guard to prevent theft comes under this.
     - This also includes security form natural disasters like fire & earth quake.
+
+
+
+2. Integrity :- 
+
+- Integrity makes sure that data is reliable and comes from trusted source.
+- It also includes that data is only accessible by authorized user.
+- It also includes that data is not altered by wrong person.
