@@ -11,4 +11,10 @@ There are main 2 types of attacks :
 - In Injection attack additional code is inserted into the web page.
 - Ex. SQL Injection, Code Injection, XML Injection, Log Injection
 
-2. 
+2. DNS Spoofing :-
+
+- In DNS Spoofing, DNS resolver's cache is attacked.
+- It tricks DNS server to direct the page to incorrect IP address.
+- And it directs the server traffic to the attacker's computer.
+- If this kind of attack goes long without detection then it can cause several damage.
+
