@@ -45,3 +45,10 @@ There are main 2 types of attacks :
     1. Volume-based attack = It saturates the bandwidth
     2. Protocol-based attack = It consumes the server resources
     3. Application-based attack = It crashes the web application
+
+7. Dictionary Attack :- 
+
+- It has predefined list of common passwords.
+- Attacker tries all password to log into user's account.
+- Diff between this and Brute Force is that Brute Force tries all possiblilities.
+
