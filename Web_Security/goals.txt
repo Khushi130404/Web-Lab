@@ -36,4 +36,9 @@ Goals of Web Security :-
     - This tool verifies the user.
     - It is done by make user log into system with username and password.
     
-    
+    4. Authorization :- 
+
+    - Authorization comes after authentication.
+    - This tool decides whether to allow user to do certain task or not.
+    - Authorization is given by access control policy.
+    - This includes the acces of data, system, feature, application ect.
