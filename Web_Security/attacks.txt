@@ -18,3 +18,8 @@ There are main 2 types of attacks :
 - And it directs the server traffic to the attacker's computer.
 - If this kind of attack goes long without detection then it can cause several damage.
 
+3. Session Hijacking :-
+
+- In this, Session is hijacked by attacker.
+- And attacker steels Session cookies.
+- This cookies helps to retrive all user's information.
