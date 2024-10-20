@@ -2,6 +2,17 @@
 
 - There is only 1 key ie Privet
 - Privet key is used for both Encryption & Decreption
+- Key is Symmetric
 - If someone discovers the key then communication is compromised
 - Both parties ie sender & receiver have equal control
 - Receiver can modify the sender's message 
+
+
+# Public Key Cryptography :-
+
+- There is a Public key & Privet key
+- Encryption & Decreption is not done by same key
+- Here sender & receiver do not have equal control
+- Both Keys are Asymmetric
+- Allows secure communication without using Key Destribution Center (KDN)
+- Varifies authenticity of user, makes sure message comes from sender
