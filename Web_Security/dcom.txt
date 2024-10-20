@@ -1,0 +1,8 @@
+# DCOM :-
+
+- Distributed Component Object Model
+- It is an extended version of COM (Component Object Model)
+- It is designed to communicate accross difference computer
+- It can pass the object & argument from one COM object to another 
+- It have distributed garbage collection functionality
+- Which is imp to reduce the traffic of web server
