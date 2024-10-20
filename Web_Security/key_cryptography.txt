@@ -1,0 +1,7 @@
+# Privet Key Cryptography :-
+
+- There is only 1 key ie Privet
+- Privet key is used for both Encryption & Decreption
+- If someone discovers the key then communication is compromised
+- Both parties ie sender & receiver have equal control
+- Receiver can modify the sender's message 
