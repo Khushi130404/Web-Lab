@@ -3,3 +3,18 @@
 - Remote Method Invocation
 - It is a mechanism in Java that allows one system to access object of another system
 - It basically enables the communication between 2 different Java program 
+
+# Architecture of RMI :-
+
+1. Stub = It is a proxy object that represents remote object on client side
+        = Client interects with Stub as it is remote object
+
+2. Skeleton = It resides on server side
+            = It communicates with stub to pass client's request to server
+
+3. RRL = Remote Reference Layer
+       = It manages reference of remote object
+       = It passes the client's method call from Stub to Skeleton
+
+4. Transport Layer = It setup and manages connection
+                   = It allows communication between client & server 
