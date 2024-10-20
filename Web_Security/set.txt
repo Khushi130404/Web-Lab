@@ -25,4 +25,10 @@ Digital Signature has 2 separate piece of information :
 2. Payment information (PI) = For Bank
 
 - Bank cannot access OI & Merchant cannot access PI
- 
+
+# Steps in Purchase Request :-
+
+1. Initiate Request = Customer requests certificate from Merchant
+2. Initiate Responce = Merchant sends a signed Responce
+3. Purchase Request = Customer sends Order information
+4. Purchase Responce = Merchant confirms order
