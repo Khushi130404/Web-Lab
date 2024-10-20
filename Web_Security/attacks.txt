@@ -62,3 +62,8 @@ There are main 2 types of attacks :
 - In this attack, attacker access unauthorised file on web server.
 - It can read, add, delete or modify it.
 
+10. Man in the Middle attack :-
+
+- Attacker attacks the common connection between server & client.
+- It acts as a bridge.
+- Attacker is able to read, insert, modify the data. 
