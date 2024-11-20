@@ -1,0 +1,77 @@
+Types Of Attacks :- 
+
+There are main 2 types of attacks : 
+1. Web based attack
+2. System based attack
+
+# Web Based Attacks :-
+
+1. Injection attack :-
+
+- In Injection attack additional code is inserted into the web page.
+- Ex. SQL Injection, Code Injection, XML Injection, Log Injection
+
+2. DNS Spoofing :-
+
+- In DNS Spoofing, DNS resolver's cache is attacked.
+- It tricks DNS server to direct the page to incorrect IP address.
+- And it directs the server traffic to the attacker's computer.
+- If this kind of attack goes long without detection then it can cause several damage.
+
+3. Session Hijacking :-
+
+- In this, Session is hijacked by attacker.
+- And attacker steels Session cookies.
+- This cookies helps to retrive all user's information.
+
+4. Phising :- 
+
+- In this attack, attacker pretends to be a trust worthy source.
+- And gets the user's credentials like username & password.
+- It also steels info like user's creditcard number.
+
+5. Brute Force :-
+
+- It tries to guess the user's password till it gets it right.
+- This is a hit and trial method.
+- This tries all possible outcomes.
+
+6. Denial Of Service :-
+
+- In this attack, server is hacked by attacker.
+- It creates flood & traffic in server.
+- Due to this client cannot acces data send by server.
+- There are 3 types :-
+    1. Volume-based attack = It saturates the bandwidth
+    2. Protocol-based attack = It consumes the server resources
+    3. Application-based attack = It crashes the web application
+
+7. Dictionary Attack :- 
+
+- It has predefined list of common passwords.
+- Attacker tries all password to log into user's account.
+- Diff between this and Brute Force is that Brute Force tries all possiblilities.
+
+8. URL Interpretation :-
+
+- This is used to acces unauthorised web pages of web app.
+- Attacker changes the certain part of URL to acces feature.
+
+9. File Inclusion Attack :-
+
+- In this attack, attacker access unauthorised file on web server.
+- It can read, add, delete or modify it.
+
+10. Man in the Middle attack :-
+
+- Attacker attacks the common connection between server & client.
+- It acts as a bridge.
+- Attacker is able to read, insert, modify the data. 
+
+# System Based Attack :-
+
+1. Virus
+2. Worm
+3. Trojan Horse
+4. Backdoors
+5. Bots

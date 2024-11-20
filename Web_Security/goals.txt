@@ -1,0 +1,67 @@
+Goals of Web Security :- 
+
+1. confidentiality of data
+2. Integrity of data
+3. Availability of data to authorized user
+
+
+
+1. Confidentiality :-
+
+- Confidentiality refers to the privacy of data
+- It make sure that data cannot be read or write by the wring person
+
+# Tools of Confidentiality :-
+    
+    1. Encryption : -
+
+    - This tool makes the data unreadable using a secret key called Encryption key.
+    - This key converts simple data into human unreadable form.
+    - This form of data can be read by using another secret key called Decreption key.
+    - There are 2 types of Encryption.
+        1. Symmetric-Key = Where Encryption and Decreption key are same
+        2. Asymmetric-Key = Where Encryption and Decreption key are different
+    
+    2. Access Control :-
+
+    - This tool make sure who can access a system information.
+    - This is done by having a set of rules and policies about who can access data.
+    - This includes person's credentials to verifiy access.
+    - Credentials can be username, e-mail, computer's series number.
+    - Credentials that cannot be share provides most security. 
+
+
+    3. Authentication :-
+
+    - This tool verifies the user.
+    - It is done by make user log into system with username and password.
+    
+    4. Authorization :- 
+
+    - Authorization comes after authentication.
+    - This tool decides whether to allow user to do certain task or not.
+    - Authorization is given by access control policy.
+    - This includes the acces of data, system, feature, application ect.
+
+    5. Physical Security :-
+
+    - This tool refers to physical security given to the place where data is stored.
+    - Generally data is stored in servers and data centers.
+    - Providing a CCTV camera, a security guard to prevent theft comes under this.
+    - This also includes security form natural disasters like fire & earth quake.
+
+
+
+2. Integrity :- 
+
+- Integrity makes sure that data is reliable and comes from trusted source.
+- It also includes that data is only accessible by authorized user.
+- It also includes that data is not altered by wrong person.
+
+
+
+3. Availability :-
+
+- Availability means data is always accessible to authorized user.
+- Data should also be accessible at a time.
+- It includes prevention of DOS (Denial of Service) attacks or system failure. 
