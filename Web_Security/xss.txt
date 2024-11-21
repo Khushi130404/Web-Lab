@@ -1,0 +1,30 @@
+# Cross Site Scripting (XSS) :-
+
+- In cross site scripting attacker injects malicious code
+- Mostly add javascrip in user's browser
+- Attacker dont directly attack the user
+- They wait for user to reach the malicious section
+- User runs that section thinking it is part of website
+- This can lead to account Hijacking, cookie theft, settings change, denial of service 
+
+# Types of XSS Attack :- 
+
+1. Presistent XSS :-
+
+- Harmful code is stored in server's database
+- And it is delivered to user form server side
+
+2. Reflected XSS :-
+
+- Harmful code is included in user's request
+- It goes from user to server side
+
+3. DOM-based XSS :-
+
+- Issues lies in website's client-side browser
+- Not server-side
+
+# Prevention of XSS Attack :- 
+
+- Check all the form fileds like inputs, headers, cookies & queries
+- Set limitation in input fileds
