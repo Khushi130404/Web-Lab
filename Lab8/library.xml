@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
+<!DOCTYPE library SYSTEM "library.dtd">
+<library>
+    <book>
+        <title>Applied Physics</title>
+        <author>Dattu Joshi</author>
+        <isnb>12032</isnb>
+        <quantity>10</quantity>
+    </book>
+    <book>
+        <title>Computer Organization</title>
+        <author>Ramesh Gaonker</author>
+        <isnb>12032</isnb>
+        <quantity>10</quantity>
+    </book>
+    <book>
+        <title>Data Science for Beginners</title>
+        <author>Corman</author>
+        <isnb>12032</isnb>
+        <quantity>10</quantity>
+    </book>
+    <book>
+        <title>Applied Mathamatics</title>
+        <author>Arwin Kreyzik</author>
+        <isnb>12032</isnb>
+        <quantity>10</quantity>
+    </book>
+    <book>
+        <title>Combinitorial Methods</title>
+        <author>Rozen</author>
+        <isnb>12032</isnb>
+        <quantity>10</quantity>
+    </book>
+</library>

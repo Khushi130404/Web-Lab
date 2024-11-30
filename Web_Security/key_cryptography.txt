@@ -1,0 +1,36 @@
+# Privet Key Cryptography :-
+
+- There is only 1 key ie Privet
+- Privet key is used for both Encryption & Decreption
+- Key is Symmetric
+- If someone discovers the key then communication is compromised
+- Both parties ie sender & receiver have equal control
+- Receiver can modify the sender's message 
+
+
+# Public Key Cryptography :-
+
+- There is a Public key & Privet key
+- Encryption & Decreption is not done by same key
+- Here sender & receiver do not have equal control
+- Both Keys are Asymmetric
+- Allows secure communication without using Key Destribution Center (KDN)
+- Varifies authenticity of user, makes sure message comes from sender
+
+# How Public Key Works :-
+
+- Sender have a privet key
+- Which he uses to Decrept the message or sign the message
+- Receiver have a Public Key
+- Which he uses to Encryption the message or verifiy the signature
+- Message can be Encrypted using both Public & Privet Key
+- Public key can not Decrept the message
+- Hence data of sender cannot be modify by receiver
+- Digital signatures provides ability to varify author, date & time
+
+# Key Distribution :-
+
+- A can create a key and deliver to B
+- A trusted 3rd party C can deliver the key to both A & B
+- If A & B have communicated before then they can share prev privet key & generate new public key
+- If A and B can securely communicate with a third party (C), C can relay the new key between them.

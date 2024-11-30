@@ -1,0 +1,5 @@
+<!ELEMENT cricket (player+)>
+<!ELEMENT player (player_name, balling_avg, highest_score)>
+<!ELEMENT player_name (#PCDATA)>
+<!ELEMENT balling_avg (#PCDATA)>
+<!ELEMENT highest_score (#PCDATA)>

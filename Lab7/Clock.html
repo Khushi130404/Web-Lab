@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #282c34;
+      }
+
+      .clock-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #20232a;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .time {
+        font-size: 48px;
+        font-weight: bold;
+        color: #61dafb;
+        margin: 0 10px;
+      }
+
+      .divider {
+        font-size: 48px;
+        color: #ffffff;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .time,
+      .divider {
+        animation: fadeIn 1s ease-in-out;
+      }
+    </style>
+    <script>
+      function setTime() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var nums = JSON.parse(this.responseText);
+            var time = document.getElementsByClassName("time");
+            for (var i = 0; i < time.length; i++) {
+              time[i].innerHTML = nums[i];
+            }
+          }
+        };
+        xhttp.open("GET", "Clock.php", true);
+        xhttp.send();
+      }
+      setInterval(setTime, 1000);
+      window.onload = setTime;
+    </script>
+  </head>
+  <body>
+    <div class="clock-container">
+      <div class="time">Hr</div>
+      <div class="divider">:</div>
+      <div class="time">Min</div>
+      <div class="divider">:</div>
+      <div class="time">Sec</div>
+    </div>
+  </body>
+</html>

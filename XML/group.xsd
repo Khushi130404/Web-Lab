@@ -1,0 +1,45 @@
+,<xs:group name="fullName">
+    <xs:sequence>
+        <xs:element name="firstName" type="xs:string"/>
+        <xs:element name="middleName" type="xs:string"/>
+        <xs:element name="lastName" type="xs:string"/>
+    </xs:sequence>
+</xs:group>
+<xs:complexType name="fullInfo">
+    <xs:sequence>
+        <xs:group ref="fullName"/>
+        <xs:element name="age" type="xs:positiveInteger"/>
+        <xs:element name="branch">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="CSE"/>
+                    <xs:enumeration value="Electrical"/>
+                    <xs:enumeration value="Mechanical"/>
+                    <xs:enumeration value="Chemical"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:element name="person">
+    <xs:complexType>
+        <xs:choice>
+            <xs:element name="student">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="fullInfo">
+                            <xs:attribute name="year" use="optional">
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="1"/>
+                                    <xs:maxInclusive value="4"/>
+                                </xs:restriction>
+                            </xs:attribute>
+                        </xs:extension>
+                    <xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="faculty" type="fullInfo"/>
+            <xs:element name="staff" type="fullInfo"/>
+        </xs:choice>
+    </xs:complexType>
+</xs:element>

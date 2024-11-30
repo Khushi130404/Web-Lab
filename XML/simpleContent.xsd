@@ -1,0 +1,17 @@
+<xs:element name="shoesize">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="country" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="India"/>
+                            <xs:enumeration value="USA"/>
+                            <xs:enumeration value="Canada"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
