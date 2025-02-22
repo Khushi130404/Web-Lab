@@ -1,0 +1,6 @@
+# Middleware :-
+
+- It is used to bridge the gap between application, tool or database
+- It allow exchange of data between 2 platforms
+- Middleware sits between OS & application
+- It provides functionality like communication, I/O & data management

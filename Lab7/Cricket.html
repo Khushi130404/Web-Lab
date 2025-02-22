@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Scoreboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .scoreboard {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px 60px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h3 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #333;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin: 10px 0px;
+      }
+
+      .label {
+        font-weight: bold;
+        font-size: 18px;
+        color: #555;
+      }
+
+      .score {
+        font-size: 20px;
+        color: #000;
+      }
+
+      #finish {
+        margin-top: 20px;
+        font-size: 22px;
+        color: red;
+        font-weight: bold;
+      }
+
+      @media (max-width: 600px) {
+        .scoreboard {
+          width: 90%;
+        }
+
+        h3 {
+          font-size: 20px;
+        }
+
+        .label {
+          font-size: 16px;
+        }
+
+        .score {
+          font-size: 18px;
+        }
+      }
+    </style>
+    <script>
+      function getScore() {
+        var xhttp = new XMLHttpRequest();
+        var run = parseInt(document.getElementById("run").innerHTML);
+        var over = parseFloat(document.getElementById("over").innerHTML);
+        var wicket = parseInt(document.getElementById("wicket").innerHTML);
+        if (wicket == 10 || over == 20) {
+          clearInterval(id);
+          document.getElementById("finish").innerHTML = "Game Over";
+          return;
+        }
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var score = JSON.parse(this.responseText);
+            var score_ele = document.getElementsByClassName("score");
+            var properties = ["run", "over", "wicket"];
+            properties.forEach(function (p, i) {
+              score_ele[i].innerHTML = score[p];
+            });
+          }
+        };
+        xhttp.open(
+          "GET",
+          "Cricket.php?run=" + run + "&over=" + over + "&wicket=" + wicket,
+          true
+        );
+        xhttp.send();
+      }
+      id = setInterval(getScore, 2000);
+      window.onload = getScore;
+    </script>
+  </head>
+  <body>
+    <div class="scoreboard">
+      <h3>T20 Cricket Match</h3>
+      <ul>
+        <li>
+          <div class="label">Run :</div>
+          <div id="run" class="score">0</div>
+        </li>
+        <li>
+          <div class="label">Over :</div>
+          <div id="over" class="score">0</div>
+        </li>
+        <li>
+          <div class="label">Wicket :</div>
+          <div id="wicket" class="score">0</div>
+        </li>
+      </ul>
+      <div id="finish"></div>
+    </div>
+  </body>
+</html>

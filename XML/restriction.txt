@@ -1,0 +1,15 @@
+Restrictions for Datatypes :-
+
+Constraint 	    Description
+
+enumeration 	Defines a list of acceptable values
+fractionDigits  Specifies the maximum number of decimal places allowed. Must be equal to or greater than zero
+length 		    Specifies the exact number of characters or list items allowed. Must be equal  to or greater than zero
+maxExclusive 	Specifies the upper bounds for numeric values (the value must be less than this value)
+maxInclusive 	Specifies the upper bounds for numeric values (the value must be less than or equal to this value)
+maxLength 	    Specifies the maximum number of characters or list items allowed. Must be equal to or greater than zero
+minExclusive 	Specifies the lower bounds for numeric values (the value must be greater than this value)
+minInclusive 	Specifies the lower bounds for numeric values (the value must be greater than or equal to this value)
+minLength 	    Specifies the minimum number of characters or list items allowed. Must be equal to or greater than zero
+pattern 		Defines the exact sequence of characters that are acceptable totalDigits Specifies the exact number of digits allowed. Must be 		greater than zero
+whiteSpace 	    Specifies how white space (line feeds, tabs, spaces, and carriage returns) is handled

@@ -1,0 +1,24 @@
+# XSD Indicators :- 
+We can control HOW elements are to be used in documents with indicators.
+
+# Indicators
+There are seven indicators:-
+
+Order indicators:
+1 All
+2 Choice
+3 Sequence
+Occurrence indicators:
+4 maxOccurs
+5 minOccurs
+Group indicators:
+6 Group name
+7 attributeGroup name
+Order Indicators
+- Order indicators are used to define the order of the elements.
+
+# All Indicator :-
+The <all> indicator specifies that the child elements can appear in any order, and that each child element must occur only once:
+Note: When using the <all> indicator you can set the <minOccurs> indicator to 0 or 1 and the <maxOccurs> indicator can only be set to 1. 
+
+

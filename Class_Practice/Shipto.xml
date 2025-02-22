@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<shiporder orderid="888888" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Shipto.xsd">
+    <orderperson>Khushi Patel</orderperson>
+    <shipto>
+        <name>Nita Patel</name>
+        <address>Old Padra</address>
+        <city>Vadodara</city>
+        <country>India</country>
+    </shipto>
+    <item>
+        <title>Bread</title>
+        <note>Whole Wheat</note>
+        <quantity>3</quantity>
+        <price>10.90</price>
+    </item>
+    <item>
+        <title>Butter</title>
+        <quantity>1</quantity>
+        <price>5.50</price>
+    </item>
+</shiporder>

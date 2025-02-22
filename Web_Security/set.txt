@@ -1,0 +1,49 @@
+# Secure Electronic Transaction (SET):-
+
+- It is a standard created to protect credit card transactions
+- It was developed by Mastercard, Visa
+- It is not a payment system
+- It is Protocol for secure transactions between customer, merchant & bank
+
+# Steps of SET Transaction :-
+
+1. Customer opens an account at creditcard company
+2. Customer gets certificate from bank
+3. Merchant also have certificate for verification
+4. Customer place an order with merchant
+5. Bank verifies the certificate of merchant
+6. Order & payment details are settings
+7. Merchant requests for payment authorization from Bank
+8. Merchant confirms and place order
+9. Merchant provides good & services to the customer
+10. Merchant request for payment 
+
+# Digital Signature :-
+
+Digital Signature has 2 separate piece of information :
+1. Order information (OI) = For Merchant
+2. Payment information (PI) = For Bank
+
+- Bank cannot access OI & Merchant cannot access PI
+
+# Steps in Purchase Request :-
+
+1. Initiate Request = Customer requests certificate from Merchant
+2. Initiate Responce = Merchant sends a signed Responce
+3. Purchase Request = Customer sends Order information
+4. Purchase Responce = Merchant confirms order
+
+# What Merchant do ?
+
+1. Merchant ensures customer's certificate, if it is valid
+2. Merchant verifies the dual signature to ensure that order hasnt been temperd with
+3. Merchant process the OI & sends the PI to bank
+4. Merchant send confirmation information to customer
+
+# Payment Gatewat :-
+
+1. Bank verifies all the certificates
+2. Bank Checks merchant's signature to ensure authenticity
+3. Bank checks the dual signature on payment to ensure everything matches
+4. Bank verifies the transactions & give authorization to payment
+5. Bank sends confirmation to Merchant

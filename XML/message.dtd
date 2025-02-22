@@ -1,0 +1,17 @@
+<!ELEMENT message(letter|email)>
+<!ELEMENT letter(letterHead,letterBody)>
+<!ELEMENT letterHead(name,address,date?,subject?)>
+<!ELEMENT letterBody(text+,writer)>
+<!ELEMENT email(head|body)>
+<!ELEMENT head(to+,from,date?,subject?)>
+<!ELEMENT body(text+)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT date(#PCDATA)>
+<!ELEMENT subject(#PCDATA)>
+<!ELEMENT text(#PCDATA)>
+<!ELEMENT writer(#PCDATA)>
+<!ELEMENT to(#PCDATA)>
+<!ELEMENT from(#PCDATA)>
+<!ATTLIST letter reply (yes|no) "no">
+<!ATTLIST email reply (yes|no) "no">
