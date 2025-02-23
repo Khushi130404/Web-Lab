@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        background-color: rgb(238, 220, 245);
+        display: flexbox;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .box {
+        margin-top: 250px;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        vertical-align: middle;
+        color: rgb(26, 6, 31);
+        text-align: center;
+        font-size: 10px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        function animationBox() {
+          $(".box").animate(
+            {
+              fontSize: "100px",
+            },
+            2000,
+            function () {
+              $(".box").animate({ fontSize: "10px" }, 2000, animationBox);
+            }
+          );
+        }
+        animationBox();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="box">Tahiti a magical place...!</div>
+  </body>
+</html>

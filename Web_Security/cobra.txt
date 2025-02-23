@@ -1,0 +1,32 @@
+# COBRA :-
+
+- Common Object Brocker Request Architecture
+- It is standard create by OMG (Object management group)
+- COBRA allows the communication between 2 Objects 
+
+1. Platform Independence :-
+
+- COBRA is machine & language independent
+- These Objects in COBRA can be on different,
+    1. computer
+    2. programming language
+    3. operating system
+
+2. Location transparency :- 
+
+- It is also location independent
+- Client do not need to know the location of the Object
+- It can be on same computer of diff computer
+
+3. IDL :-
+
+- Interface defination language
+- COBRA hase special language called IDL
+- It makes different Objects or system understand each other
+
+How COBRA Works ?
+
+- Client requests COBRA to find the Object
+- COBRA finds the server which has the object that client need
+- COBRA brings responce from Object to the client
+- COBRA makes virtual bridge between client & server, it is called software bridge

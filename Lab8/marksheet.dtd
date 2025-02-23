@@ -1,0 +1,10 @@
+<!ELEMENT marksheet (student+)>
+<!ELEMENT student (name, roll_number, semester, subjects)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT roll_number (#PCDATA)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT subjects (subject+)>
+<!ELEMENT subject (name, marks, max_marks)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT marks (#PCDATA)>
+<!ELEMENT max_marks (#PCDATA)>

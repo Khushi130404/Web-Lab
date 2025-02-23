@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script>
+      window.onload = light;
+
+      function setRed() {
+        $("#green").fadeTo(1000, 0);
+        $("#red").fadeTo(2000, 1);
+      }
+      function setYellow() {
+        $("#red").fadeTo(1000, 0);
+        $("#yellow").fadeTo(2000, 1);
+      }
+      function setGreen() {
+        $("#yellow").fadeTo(1000, 0);
+        $("#green").fadeTo(2000, 1);
+      }
+      function light() {
+        $(document).ready(function () {
+          setRed();
+          setTimeout(function () {
+            setYellow();
+            setTimeout(function () {
+              setGreen();
+              setTimeout(light, 4000);
+            }, 6000);
+          }, 6000);
+        });
+      }
+    </script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+      }
+      .grid {
+        display: grid;
+        width: fit-content;
+        border: 1px solid white;
+        margin-top: 50px;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        align-content: center;
+      }
+      #red,
+      #yellow,
+      #green {
+        opacity: 0;
+        transition: opacity 1s;
+      }
+      #red {
+        background-color: red;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+      #green {
+        background-color: green;
+      }
+
+      .circle {
+        margin: 20px;
+        width: 150px;
+        height: 150px;
+        border-radius: 360px;
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="circle" id="red">RED</div>
+      <div class="circle" id="yellow">YELLOW</div>
+      <div class="circle" id="green">GREEN</div>
+    </div>
+  </body>
+</html>

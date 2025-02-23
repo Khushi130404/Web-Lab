@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snowfall Animation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #0a0515;
+      }
+      .snowflake {
+        position: absolute;
+        top: -50px;
+        width: 20px;
+        height: 20px;
+        pointer-events: none;
+        animation: fall linear infinite;
+      }
+
+      @keyframes fall {
+        to {
+          transform: translateY(100vh);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function createSnowflake() {
+        const snowflake = document.createElement("img");
+        snowflake.src = "image/snowflake.svg";
+        snowflake.classList.add("snowflake");
+        snowflake.style.left = Math.random() * 100 + "vw";
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
+        snowflake.style.opacity = Math.random();
+        snowflake.style.transform = `scale(${Math.random()})`;
+
+        document.body.appendChild(snowflake);
+
+        snowflake.addEventListener("animationend", () => {
+          snowflake.remove();
+        });
+      }
+      setInterval(createSnowflake, 100);
+    </script>
+  </body>
+</html>

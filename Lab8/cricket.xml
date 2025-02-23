@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cricket.xsl"?>
+<!DOCTYPE cricket SYSTEM "cricket.dtd">
+<cricket>
+    <player>
+        <player_name>Virat Kohli</player_name>
+        <balling_avg>23.45</balling_avg>
+        <highest_score>183</highest_score>
+    </player>
+    <player>
+        <player_name>Rohit Sharma</player_name>
+        <balling_avg>32.15</balling_avg>
+        <highest_score>264</highest_score>
+    </player>
+    <player>
+        <player_name>MS Dhoni</player_name>
+        <balling_avg>12.67</balling_avg>
+        <highest_score>183</highest_score>
+    </player>
+    <player>
+        <player_name>Jasprit Bumrah</player_name>
+        <balling_avg>22.65</balling_avg>
+        <highest_score>10</highest_score>
+    </player>
+    <player>
+        <player_name>Hardik Pandya</player_name>
+        <balling_avg>29.58</balling_avg>
+        <highest_score>92</highest_score>
+    </player>
+</cricket>

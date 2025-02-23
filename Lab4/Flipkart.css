@@ -1,0 +1,464 @@
+body {
+  background-color: #f0f0f0;
+  padding-top: 70px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow: scroll;
+}
+
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-custom {
+  background-color: white;
+}
+
+.navbar-brand img {
+  width: 100px;
+}
+.form-control-custom {
+  width: 500px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-link {
+  color: black !important;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 17px;
+}
+
+.nav-link img {
+  margin-right: 7px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.dropdown-toggle:hover {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.dropdown-menu img {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu.custom-dropdown-menu {
+  position: absolute;
+  left: 0;
+  transform: translateX(-80%);
+}
+
+.section1 img {
+  width: 64px;
+  height: 64px;
+  align-self: center;
+  align-content: center;
+}
+
+.section1 {
+  background-color: white;
+  margin: 10px 20px;
+  padding: 15px 5px;
+}
+
+.section1 .container {
+  width: 100%;
+}
+
+.section1 .row {
+  margin: 0px -40px;
+}
+
+.section1 .col {
+  display: grid;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.section1 .col div {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.section3 .con {
+  padding: 0 10px;
+  width: 100%;
+}
+
+.section3 .row {
+  width: 100%;
+}
+
+.section3 .row2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.section3 .row2 div {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin: 7px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+}
+
+.section3 h4 {
+  margin-left: 20px;
+}
+
+.section3 .row2 img {
+  width: 90%;
+  height: 165px !important;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+.section3 .row2 img:hover {
+  transform: scale(1.05);
+}
+
+.section3 p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.section4 .row {
+  margin: 0 -60px;
+}
+
+.section4 .row div {
+  margin: 0;
+  padding: 0 5px;
+}
+
+.section4 img {
+  width: 100%;
+}
+
+.section5 {
+  background-color: white;
+  margin: 0 20px;
+}
+
+.section5 .row {
+  margin: 0 -50px;
+  display: flex;
+  justify-content: center;
+}
+
+.section5 .row div {
+  display: grid;
+  width: 15% !important;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 15px;
+  margin: 0 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section5 img {
+  width: 100%;
+  margin: auto;
+  transition: transform 0.6s ease;
+}
+
+.section5 img:hover {
+  transform: scale(1.1);
+}
+
+.section5 p {
+  margin-bottom: 2px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.section6 {
+  background-color: white;
+  margin: 0 20px;
+}
+
+.section6 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 -60px;
+}
+
+.section6 h4 {
+  margin-left: -10px;
+}
+
+.section6 img {
+  margin: 0 5px;
+  width: 30%;
+}
+
+.section5 .ht img {
+  height: 150px;
+}
+
+.about {
+  padding: 0 30px;
+  color: #878787;
+}
+
+.about h6 {
+  font-weight: 500;
+}
+
+.about a {
+  color: #878787;
+}
+
+.about p,
+.about div {
+  font-size: 13px;
+  margin: 0;
+  line-height: 18px;
+}
+
+.section7 .sec7 img {
+  width: 130px;
+  height: 150px;
+  transition: transform 0.5s ease;
+}
+
+.section7 .sec7 img:hover {
+  transform: scale(1.05);
+}
+
+.img7 {
+  width: 100%;
+  height: 100%;
+}
+
+.section7 .sec7 {
+  background-color: white;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.section7 .row {
+  margin: 0 -72px;
+}
+
+.section7 .sec7 .row {
+  margin: 0;
+}
+
+.section7 .sec7 .row div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 47%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+}
+
+.section7 p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.section7 h6 {
+  color: green;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section7 h4 {
+  margin: 15px 0 20px 5px;
+}
+
+footer {
+  background-color: #212121;
+  font-size: 13px;
+}
+
+footer .row {
+  margin: 0 -30px;
+}
+
+footer p {
+  color: #878787;
+}
+
+footer a {
+  color: white;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer ul p {
+  color: white;
+  margin: 0;
+  font-size: 12px;
+}
+
+footer .part1 p {
+  text-transform: uppercase;
+}
+
+footer .row1 hr {
+  height: 200px;
+  background-color: #878787;
+  width: 1px;
+  opacity: 0.7;
+}
+
+footer ul p a {
+  color: #007bff;
+  text-decoration-line: none;
+  font-weight: 600;
+}
+
+footer ul p a:hover {
+  text-decoration-line: none;
+  color: #136ac7;
+}
+
+footer .row1 img {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+footer .hr {
+  height: 1px;
+  background-color: #878787;
+  opacity: 0.7;
+}
+
+footer .row2 .part1 img {
+  width: 13px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+footer .row2 .part1 li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: center;
+}
+
+footer .row2 .part1 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.section8 .part {
+  background-color: white;
+}
+
+.section8 .part .row div {
+  margin: 0;
+  padding: 0;
+}
+
+.section8 .part .col-md-5 .row div {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin: 0;
+  text-align: center;
+  padding: 12px;
+}
+
+.section8 .col-md-7 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 12px !important;
+  text-align: center;
+}
+
+.section8 .col-md-5 img {
+  height: 120px;
+}
+
+.section8 img {
+  width: 95%;
+  transition: transform 0.5s ease;
+}
+
+.section8 img:hover {
+  transform: scale(1.04);
+}
+
+.section8 p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.section8 span {
+  color: black;
+}
+
+.section8 h6 {
+  font-weight: 600;
+  color: green;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+      }
+      table th,
+      table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+      }
+      table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      table tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      table tr:hover {
+        background-color: #f1f1f1;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <script>
+      function loadXMLTable() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var res = this.responseXML;
+            var tab =
+              "<tr><th>Title</th><th>Author</th><th>Year</th><th>Genre</th></tr>";
+            var book = res.getElementsByTagName("book");
+            for (var i = 0; i < book.length; i++) {
+              tab +=
+                "<tr><td>" +
+                book[i].getElementsByTagName("title")[0].childNodes[0]
+                  .nodeValue +
+                "</td><td>" +
+                book[i].getElementsByTagName("author")[0].childNodes[0]
+                  .nodeValue +
+                "</td><td>" +
+                book[i].getElementsByTagName("year")[0].childNodes[0]
+                  .nodeValue +
+                "</td><td>" +
+                book[i].getElementsByTagName("genre")[0].childNodes[0]
+                  .nodeValue +
+                "</td></tr>";
+            }
+            document.getElementById("demo").innerHTML = tab;
+          }
+        };
+        xhttp.open("GET", "library.xml", true);
+        xhttp.send();
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" onclick="loadXMLTable()">Click Me</button>
+    <br /><br />
+    <table id="demo"></table>
+  </body>
+</html>

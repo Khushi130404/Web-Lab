@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
+<library>
+    <book>
+        <title>Applied Physics</title>
+        <author>Dattu Joshi</author>
+        <year>2022</year>
+        <genre>Physics</genre>
+    </book>
+    <book>
+        <title>Computer Organization</title>
+        <author>Ramesh Gaonker</author>
+        <year>2018</year>
+        <genre>Hardware</genre>
+    </book>
+    <book>
+        <title>Data Science for Beginners</title>
+        <author>Corman</author>
+        <year>2021</year>
+        <genre>Data Science</genre>
+    </book>
+    <book>
+        <title>Applied Mathamatics</title>
+        <author>Arwin Kreyzik</author>
+        <year>2019</year>
+        <genre>Mathamatics</genre>
+    </book>
+    <book>
+        <title>Combinitorial Methods</title>
+        <author>Rozen</author>
+        <year>2016</year>
+        <genre>Mathamatics</genre>
+    </book>
+</library>

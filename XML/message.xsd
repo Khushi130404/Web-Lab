@@ -1,0 +1,65 @@
+<xs:attributeGroup name="gr_reply">
+    <xs:attribute name="reply" default="no">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="yes"/>
+                <xs:enumeration value="no"/> 
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:attributeGroup>
+<xs:element name="message">
+    <xs:complexType>
+        <xs:choice>
+            <xs:element name="letter">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="letterHead">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name" type="xs:string"/>
+                                    <xs:element name="address" type="xs:string"/>
+                                    <xs:element name="date" type="xs:string" minOccurs="0"/>
+                                    <xs:element name="subject" type="xs:string" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="letterBody">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="text" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                    <xs:element name="writer" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attributeGroup ref="gr_reply"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="email">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="head">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="to" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                    <xs:element name="from" type="xs:string"/>
+                                    <xs:element name="date" type="xs:string" minOccurs="0"/>
+                                    <xs:element name="subject" type="xs:string" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="body">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="text" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attributeGroup ref="gr_reply"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+</xs:element>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse and Key Events</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        background-color: #f8f9fa;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        transition: background-color 0.5s ease;
+      }
+      .container {
+        text-align: center;
+        padding: 50px;
+        border: none;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+      }
+      .info {
+        color: #bdbdbd;
+      }
+      h2 {
+        color: #8c8a8a;
+        margin-bottom: 30px;
+      }
+      input {
+        padding: 10px;
+        background-color: #f8f9fa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border: transparent;
+        border-radius: 5px;
+      }
+      input:focus {
+        border: 1px solid #bdbdbd !important;
+      }
+      .info {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Mouse Event Handler Demonstration</h2>
+      <input
+        type="text"
+        id="inputField"
+        placeholder="Type something"
+        autofocus
+      />
+      <div class="info" id="info"></div>
+    </div>
+
+    <script>
+      document
+        .getElementById("inputField")
+        .addEventListener("keydown", function (event) {
+          let key = event.key;
+          let keyCode = event.keyCode;
+          let infoDiv = document.getElementById("info");
+
+          infoDiv.innerHTML = `Key pressed: ${key} (Code: ${keyCode})`;
+
+          if (["a", "e", "i", "o", "u"].includes(key.toLowerCase())) {
+            alert(`Vowel '${key}' is pressed`);
+          }
+        });
+
+      document
+        .getElementById("inputField")
+        .addEventListener("keyup", function () {
+          document.body.style.backgroundColor = "#66b2ff";
+
+          setTimeout(function () {
+            document.body.style.backgroundColor = "";
+          }, 1000);
+        });
+    </script>
+  </body>
+</html>

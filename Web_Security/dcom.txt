@@ -1,0 +1,20 @@
+# DCOM :-
+
+- Distributed Component Object Model
+- It is an extended version of COM (Component Object Model)
+- It is a Microsoft technology
+- It is designed to communicate accross difference computer
+- It can pass the object & argument from one COM object to another 
+- It have distributed garbage collection functionality
+- Which is imp to reduce the traffic of web server
+
+
+
+# DCOM v/s COBRA :-
+
+- Both DCOM & COBRA have same functionality except COBRA is OS independent
+- COBRA can work on Windows, Linux, Unix, macOS
+- While DCOM only works on Windows
+- Both DCOM & COBRA dont work well with firewall
+- Due to whoch both COBRA & DCOM are not used now days
+- HTTP has become default standard for web communication 
